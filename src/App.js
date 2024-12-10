@@ -16,24 +16,27 @@ import BuyTickets from './pages/buyTickets/buyTickets.js'
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Events" element={<Events/>} />
-        <Route path="/Events/2024" element={<Event24/>} />
-        <Route path="/Events/2023" element={<Event23/>} />
-        <Route path="/Events/2022" element={<Event22/>} />
-        <Route path="/Events/2021" element={<Event21/>} />
-        <Route path="/Events/2019" element={<Event19/>} />
-        <Route path="/Events/2016" element={<Event16/>} />
-        <Route path="/AboutUs" element={<AboutUs/>} />
-        <Route path="/Team" element={<Team />} />
-        <Route path="/ContactUs" element={<ContactUs/>} />
-        <Route path="/Terms" element={<Terms />} />
-        <Route path="/Privacy" element={<Privacy />} />
-        <Route path="/BuyTickets" element={<BuyTickets/>}></Route>
-      </Routes>
-    </Router>
+    <>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Events" element={<Events/>} />
+            <Route path="/Events/2024" element={<Event24/>} />
+            <Route path="/Events/2023" element={<Event23/>} />
+            <Route path="/Events/2022" element={<Event22/>} />
+            <Route path="/Events/2021" element={<Event21/>} />
+            <Route path="/Events/2019" element={<Event19/>} />
+            <Route path="/Events/2016" element={<Event16/>} />
+            <Route path="/AboutUs" element={<AboutUs/>} />
+            <Route path="/Team" element={<Team />} />
+            <Route path="/ContactUs" element={<ContactUs/>} />
+            <Route path="/Terms" element={<Terms />} />
+            <Route path="/Privacy" element={<Privacy />} />
+            <Route path="/BuyTickets" element={<BuyTickets/>}></Route>
+          </Routes>
+        </Router>
+        <AboutUs></AboutUs>
+    </>
   );
 }
 
