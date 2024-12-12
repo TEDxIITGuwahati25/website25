@@ -8,7 +8,7 @@ const Team = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 570);
+      setIsSmallScreen(window.innerWidth <= 770);
     };
 
     window.addEventListener('resize', handleResize);

@@ -3,8 +3,8 @@ const Teamidmobile = (img,name,position) => {
     return (
         <div className={styles.Teamidmobile}>
             <img src={img}></img>
-            <h4>{name}</h4>
-            <p>{position}</p>
+            <div className={styles.imgTitleName}><p>{name}</p></div>
+            <div className={styles.imgTitlePost}><p>{position}</p></div>
         </div>
     );
 }

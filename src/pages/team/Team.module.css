@@ -1,20 +1,24 @@
-*{
-    border-radius: border-box;
-}
-
 .Teamiddesktop{
-    width: 16%;
+    width: 19%;
     padding: 20px;
-    margin: 10px 100px 20px 40px;
+    margin: 10px 40px 15px 40px;
     text-align: center;
-    border-radius: 15px;
-    color: black;
+    align-items: center;
 }
+.imgTitleName {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+.imgTitlePost {
+    font-weight: 300;
+  }
 .Teamiddesktop img{
     width: 100%;
 }
 .Team{
-    background-color: #1a202c;
+    /* background-color: #1a202c; */
+    background-color: black;
     color: red;
 }
 
@@ -27,36 +31,42 @@
     max-width: 95%;
     transform: translateX(5%);
     font-size: 3em;
+    font-weight: 300;
     margin-top: 0px;
 }
 .Teamdesktop h4{
     max-width: 95%;
     transform: translateX(5%);
     font-size: 1.3em;
-    color: rgba(255, 255, 255, 0.92);
+    font-weight: 300;
+    color: rgb(209, 175, 175);
 }
 .Teamdesktop p{
     transform: translateX(6%);
     max-width: 80%;
     font-size: 1.1em;
+    font-weight: 100;
     color: rgba(255, 255, 255, 0.92);
 }
+
+
 .Teammobile h1{
     max-width: 95%;
     transform: translateX(5%);
+    font-weight: 500;
     font-size: 2.5em;
     margin-top: 0px;
 }
 .Teammobile h4{
     max-width: 95%;
     transform: translateX(5%);
-    
-    color: rgba(255, 255, 255, 0.92);
+    font-weight: 500;
+    color: rgb(209, 175, 175);
 }
 .Teammobile p{
     transform: translateX(6%);
     max-width: 80%;
-    
+    font-weight: 150;
     color: rgba(255, 255, 255, 0.92);
 }
 .Teamidmobile{
@@ -64,6 +74,7 @@
     padding: 20px;
     margin: 10px 100px 20px 100px;
     text-align: center;
+    align-items: center;
     border-radius: 15px;
     color: black;
 }
