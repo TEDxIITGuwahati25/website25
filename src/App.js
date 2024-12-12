@@ -35,7 +35,6 @@ function App() {
             <Route path="/BuyTickets" element={<BuyTickets/>}></Route>
           </Routes>
         </Router>
-        <AboutUs></AboutUs>
     </>
   );
 }
