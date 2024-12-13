@@ -1,3 +1,4 @@
+
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './pages/home/Home.js'
 import Events from './pages/events/Events.js'
@@ -13,11 +14,15 @@ import Privacy from './pages/privacy/Privacy.js'
 import Terms from './pages/terms/Terms.js'
 import Team from './pages/team/Team.js'
 import BuyTickets from './pages/buyTickets/buyTickets.js'
+import Sidebar from './components/sidebar/Sidebar';
+import './components/sidebar/Sidebar.css';
 
 function App() {
   return (
     <>
         <Router>
+        <Sidebar />
+
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Events" element={<Events/>} />
