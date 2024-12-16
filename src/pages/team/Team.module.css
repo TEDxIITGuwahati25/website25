@@ -81,3 +81,16 @@
 .Teamidmobile img{
     width: 100%;
 }
+.icon{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left: 30%;
+    width: 10%;
+    height: 10%;
+}
+.icondiv{
+    visibility: hidden;
+}
+.linkedin:hover div{
+    visibility: visible;
+}
