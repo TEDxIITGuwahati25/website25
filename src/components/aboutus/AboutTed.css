@@ -1,0 +1,21 @@
+.container{
+    background-color: rgba(54, 53, 53, 0.5);
+    margin: 1% 12% 1% 12%;
+}
+
+.tab-button{
+    background: none;     
+  border: none;
+  color: inherit; 
+  font: inherit; 
+  padding: 2%; 
+  margin: 0; 
+  cursor: pointer;
+}
+.button-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box{
+    padding: 0 10% 5% 10%;
+}
