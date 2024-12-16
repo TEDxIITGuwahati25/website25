@@ -7,7 +7,7 @@ const Teamidmobile = (img,name,position,linkedin) => {
 
             <div className={styles.linkedin}>
             <a href={linkedin} target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className={styles.icon}/>
+            <div className={styles.icondiv}><FaLinkedin className={styles.icon}/></div>
             <img src={img}></img>
             </a>
             </div>
