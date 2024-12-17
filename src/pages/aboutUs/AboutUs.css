@@ -3,7 +3,8 @@
 
 body{
   color: rgba(255, 255, 255, 0.92);
-  background-color: #1a202c;  
+  /* background-color: #1a202c;   */
+  background-color: black;
   font-family: 'Nunito';
 }
 /*

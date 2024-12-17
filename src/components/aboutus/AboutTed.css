@@ -1,16 +1,23 @@
-.container{
-    background-color: rgba(54, 53, 53, 0.5);
+.content-container{
+    background-color: rgba(113, 112, 112, 0.3);
     margin: 1% 12% 1% 12%;
 }
 
+h1{
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-weight: 400;
+    font-size:4cap;
+}
 .tab-button{
     background: none;     
-  border: none;
-  color: inherit; 
-  font: inherit; 
-  padding: 2%; 
-  margin: 0; 
-  cursor: pointer;
+    border: none;
+    color: inherit; 
+    font: inherit; 
+    font-size: larger;
+    padding: 2%; 
+    margin: 0; 
+    cursor: pointer;
 }
 .button-container{
     display: flex;
@@ -18,4 +25,14 @@
 }
 .box{
     padding: 0 10% 5% 10%;
+}
+
+.tab-button:hover {
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+}
+.tab-button.active {   
+    color: rgb(184, 39, 39);
+}
+.tab-button.active:hover {   
+    text-shadow:none;
 }
