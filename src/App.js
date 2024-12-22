@@ -16,6 +16,8 @@ import Team from './pages/team/Team.js'
 import BuyTickets from './pages/buyTickets/buyTickets.js'
 import Sidebar from './components/sidebar/Sidebar';
 import './components/sidebar/Sidebar.css';
+import Footer from './components/footer/Footer.js';
+import './components/footer/Footer.css';
 
 function App() {
   return (
@@ -38,7 +40,9 @@ function App() {
             <Route path="/Terms" element={<Terms />} />
             <Route path="/Privacy" element={<Privacy />} />
             <Route path="/BuyTickets" element={<BuyTickets/>}></Route>
+            
           </Routes>
+          <Footer />
         </Router>
     </>
   );
