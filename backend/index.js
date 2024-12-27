@@ -1,4 +1,4 @@
-const expree = require('express');
+const express = require('express');
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const Razorpay = require("razorpay");
@@ -44,8 +44,8 @@ app.get("/payment/:paymentId", async(req,res) => {
     const {paymentId} = req.params;
 
     const razorpay = new Razorpay({
-        key_id:"",
-        key_secret:""
+        key_id:"rzp_test_GcZZFDPP0jHtC4",
+        key_secret:"6JdtQv2u7oUw7EWziYeyoewJ"
     })
     try{
         const payment = await razorpay.payments.fetch(paymentId)
