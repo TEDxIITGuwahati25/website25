@@ -5,7 +5,7 @@ import ScrollButton from '../../components/scroll/ScrollButton';
 
 const ContactUs = () => {
     return (
-      <>
+      <div className='main'>
         <div className="blog-section">
             <h1>Leave Us a Message!!</h1>
             <p>
@@ -44,8 +44,8 @@ const ContactUs = () => {
             </div>
         </div>
         
-        <ScrollButton />
-      </>
+        {/* <ScrollButton /> */}
+      </div>
     );
 };
 
