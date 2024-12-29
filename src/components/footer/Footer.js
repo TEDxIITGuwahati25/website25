@@ -9,15 +9,17 @@ const Footer = () => {
   return (
     <div className="footer-outer">
       <div className="row1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+           {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
 
               <text x="20" y="50" font-family="Arial, sans-serif" font-weight="bold" font-size="40">
                 <tspan fill="red">TED</tspan>
                 <tspan fill="red">x</tspan>
                 <tspan fill="white">IITGuwahati</tspan>
               </text>
-            </svg>
+            </svg>*/}
+            <img src="/images/WhiteTextLogo.png" alt="TEDx IIT Guwahati" className="footer-logo" />
 
+           
 
           </div>
       <div className="footer-row1">
