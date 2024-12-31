@@ -51,7 +51,10 @@ function App() {
             <Route path="/buyTickets" element={<BuyTickets/>}></Route>
           </Routes>
           <ScrollButton/>
-          <Footer />
+          {/* <AboutUs/>
+          <BuyTickets/>*/}
+          <Footer /> 
+          {/* <Terms/> */}
         </Router>
     </>
   );
