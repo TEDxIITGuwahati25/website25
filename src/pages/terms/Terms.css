@@ -8,7 +8,7 @@ body {
   }
   
   .container {
-    max-width: 900px;
+    max-width: 900px; 
     margin: 20px auto;
     padding: 20px;
     background-color: black;
@@ -29,14 +29,10 @@ body {
   }
 
   .container 
-  h2,
-  h3 {
-    color: rgb(209, 175, 175);
-  }
-  
-  
-  .container h2 {
-    margin-top: 20px;
+  h2{
+    color: #e99797;
+    /* margin-top: 20px; */
+    font-weight: 500;
   }
   
   .container ul {
@@ -49,7 +45,16 @@ body {
     text-decoration: none;
   }
   
-  .container body {
+  .container a:hover {
+    text-decoration: underline;
+}
+
+.updated-date {
+  text-align: center;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+  /* .container body {
     background-color: #000;
     color: #fff;
     font-family: Arial, sans-serif;
@@ -115,4 +120,4 @@ body {
     margin-bottom: 20px;
 }
   
-}
+} */
