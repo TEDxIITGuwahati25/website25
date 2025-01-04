@@ -24,32 +24,29 @@ body {
     font-size: 3rem;
     font-weight: 300;
     margin-top: 0px;
-}
-
-h1, h2, h3 {
-    color: rgb(209, 175, 175);
-}
-
-h1 {
     text-align: center;
     margin-bottom: 30px;
 }
 
-h2 {
+.container h2, h3 {
+    color: rgb(209, 175, 175);
+}
+
+.container h2 {
     margin-top: 20px;
 }
 
-ul {
+.container ul {
     list-style-type: square;
     margin-left: 20px;
 }
 
-a {
+.container a {
     color: #CD5C5C;
     text-decoration: none;
 }
 
-a:hover {
+.container a:hover {
     text-decoration: underline;
 }
 
