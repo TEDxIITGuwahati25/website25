@@ -28,6 +28,7 @@
     justify-content: space-evenly;
 }
 .Teamdesktop h1{
+    color: red;
     max-width: 95%;
     transform: translateX(5%);
     font-size: 3em;
