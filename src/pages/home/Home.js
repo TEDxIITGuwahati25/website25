@@ -1,9 +1,14 @@
 import styles from './home.module.css'
-
+import Schedule from './schedule'
+import Timeline from './timeline'
 const Home = () => {
-    return (
+  return (
+    <>
       <div>Home Page</div>
-    );
-  }
-  
-  export default Home;
+      <Schedule />
+      <Timeline/>
+    </>
+  );
+}
+
+export default Home;
