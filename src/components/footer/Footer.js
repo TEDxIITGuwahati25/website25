@@ -1,6 +1,8 @@
 import React from 'react';
 import './Footer.css';
+import  '../scroll/ScrollButton';
 import { NavLink } from "react-router-dom";
+import ScrollButton from '../scroll/ScrollButton';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -9,20 +11,33 @@ const Footer = () => {
   return (
     <div className="footer-outer">
       <div className="row1">
-            <img src="./images/WhiteTextLogo.png" alt="TEDx IIT Guwahati" className="footer-logo" />
-      </div>
+           {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+
+              <text x="20" y="50" font-family="Arial, sans-serif" font-weight="bold" font-size="40">
+                <tspan fill="red">TED</tspan>
+                <tspan fill="red">x</tspan>
+                <tspan fill="white">IITGuwahati</tspan>
+              </text>
+            </svg>*/}
+            <a href="Home">
+            <img src="/images/WhiteTextLogo.png" alt="TEDx IIT Guwahati" className="footer-logo" />
+            </a>
+           
+
+          </div>
       <div className="footer-row1">
         {/* About TED Section */}
         <div className="footer-col1">
           <h4 className="footer-heading footer-link">What is TEDx?</h4>
-          <div className="footer-ted-desc">
+      <div className="footer-ted-desc">
             This independent TEDx event is organized under license from TED.
             In the same spirit of spreading ideas, TED has created a program called TEDx.
             TEDx is an independently organized program of local events that bring together an audience in a TED-like experience. Our event is TEDxIITGuwahati, where x means TED event organized independently.
             At TEDxIITGuwahati, we combine videos of TED talks and live speakers to generate a deep conversation and connection between attendees. TED gives general guidelines for the TEDx program, but each individual TEDx is organized autonomously (subject to certain guidelines).
 
             TEDxIITGuwahati is a non-profit organization made up of volunteers. Their mission is to spread transformative ideas.
-          </div>
+         
+          </div> 
         </div>
 
         {/* Quick Links Section */}
@@ -42,6 +57,7 @@ const Footer = () => {
           
           <div className='row2'>
             <h4 className="footer-heading footer-link">Follow Us</h4>
+       
             <div className="footer-social">
 
 
@@ -65,7 +81,9 @@ const Footer = () => {
               </a>
 
             </div>
+            
             <span>Mail us <span style={{ color: 'red' }}>at iitg.tedx@gmail.com</span></span>
+           
           </div>
         </div>
       </div>
@@ -75,6 +93,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
+   
   );
 };
 
