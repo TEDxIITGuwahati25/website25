@@ -343,6 +343,20 @@ const Terms = () => {
       <p style={{ fontStyle: "italic", fontSize: "0.9em", fontFamily: "'Arial', sans-serif" }}>
         These terms were updated on 14 December 2024.
       </p>
+
+      {/* <div
+        className="footer"
+        style={{
+          backgroundColor: "#2F283C",
+          color: "white",
+          textAlign: "center",
+          padding: "20px 0",
+          fontFamily: "'Arial', sans-serif",
+          fontSize: "14px",
+        }}
+      >
+        <p style={{ margin: 0 }}>© 2024 TEDxIITGuwahati. All rights reserved.</p>
+      </div> */}
     </div>
   );
 };
