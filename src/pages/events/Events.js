@@ -119,7 +119,7 @@ const Events = () => {
             >
               <Link to="/Events/2022" className={styles.link_box}>
                 <img
-                  src="/Images/eventsHome/theme22.jpeg"
+                  src="./Images/eventsHome/theme22.jpeg"
                   alt=""
                   className={styles.image}
                   id={styles["im1"]}
@@ -153,7 +153,7 @@ const Events = () => {
             >
               <Link to="/Events/2021" className={styles.link_box}>
                 <img
-                  src="/Images/eventsHome/theme21.png"
+                  src="./Images/eventsHome/theme21.png"
                   alt=""
                   className={styles.image}
                   id={styles["im1"]}
@@ -187,7 +187,7 @@ const Events = () => {
             >
               <Link to="/Events/2019" className={styles.link_box}>
                 <img
-                  src="/Images/eventsHome/theme19.png"
+                  src="./Images/eventsHome/theme19.png"
                   alt=""
                   className={styles.image}
                   id={styles["im1"]}
@@ -221,7 +221,7 @@ const Events = () => {
             >
               <Link to="/Events/2016" className={styles.link_box}>
                 <img
-                  src="/Images/eventsHome/theme16.png"
+                  src="./Images/eventsHome/theme16.png"
                   alt=""
                   className={styles.image}
                   id={styles["im1"]}

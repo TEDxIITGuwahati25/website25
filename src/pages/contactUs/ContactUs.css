@@ -105,7 +105,7 @@ textarea {
     margin-right: 10px;
 }
 
-.button-container {
+.form-container .button-container {
     display: flex;
     justify-content: flex-end;
 }
@@ -156,24 +156,80 @@ textarea {
 
 @media (max-width: 480px) {
     .blog-section h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 10px;
     }
-
+    
     .blog-section p {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
 
     .form-container {
-        padding: 15px;
+        max-width: 90%;
+        position: relative;
+        background-color: #2F2E3C;
+        padding: 20px;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        box-shadow: none; 
+        z-index: 2;
     }
 
+    .form-wrapper {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .outer-box {
+        position: absolute;
+        border: 2px solid white;
+        top: 10px;
+        left: 10px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+        margin-bottom: 15px;
+    }
+    
     .row input {
-        padding: 12px;
+        width: 48%; 
+        padding: 10px;
         font-size: 1rem;
+    }
+    
+    textarea {
+        width: 100%; 
+        padding: 10px;
+        font-size: 1rem;
+        margin-bottom: 10px;
     }
 
-    .form-container button {
-        padding: 12px;
-        font-size: 1rem;
+    .button-container {
+        display: flex;
+        justify-content: center;
     }
+    
+    .form-container button {
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        font-size: 1rem;
+        border: none;
+    }
+
+    .form-container button:hover {
+        background-color: red;
+        color: white;
+    }
+
 }

@@ -5,6 +5,9 @@ import { NavLink } from "react-router-dom";
 import ScrollButton from '../scroll/ScrollButton';
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="footer-outer">
       <div className="row1">
@@ -40,12 +43,12 @@ const Footer = () => {
         {/* Quick Links Section */}
         <div className="footer-col2">
           <h4 className="footer-heading ">Quick Links</h4>
-          <div className='link'>
-            <NavLink to="/Events">Events</NavLink>
-            <NavLink to="AboutUs">About Us</NavLink>
-            <NavLink to="/BuyTickets">Buy Tickets</NavLink>
-            <NavLink to="/Privacy">Privacy Policies</NavLink>
-            <NavLink to="/Terms">Terms and Conditions</NavLink>
+          <div>
+            <NavLink to="/Events"onClick={scrollToTop}>Events</NavLink>
+            <NavLink to="AboutUs"onClick={scrollToTop}>About Us</NavLink>
+            <NavLink to="/BuyTickets"onClick={scrollToTop}>Buy Tickets</NavLink>
+            <NavLink to="/Privacy"onClick={scrollToTop}>Privacy Policies</NavLink>
+            <NavLink to="/Terms"onClick={scrollToTop}>Terms and Conditions</NavLink>
           </div>
         </div>
 

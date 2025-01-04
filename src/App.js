@@ -1,5 +1,6 @@
 
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
 import Home from './pages/home/Home.js'
 import Events from './pages/events/Events.js'
 import Event24 from "./pages/events/2024/Event_24.js"
@@ -15,16 +16,24 @@ import Terms from './pages/terms/Terms.js'
 import Team from './pages/team/Team.js'
 import BuyTickets from './pages/buyTickets/buyTickets.js'
 import Sidebar from './components/sidebar/Sidebar';
-import './components/sidebar/Sidebar.css';
+import Preloader from './components/preloader/Preloader.js'
 import Footer from './components/footer/Footer.js';
-import './components/footer/Footer.css';
+import ScrollButton from './components/scroll/ScrollButton.js'
 
 function App() {
+  const [isLoaded,setIsLoaded] =useState(false);
+
+  const handleVideoEnd = () => {
+    setIsLoaded(true); // Set to true when the video ends
+  };
   return (
     <>
         <Router>
-     <Sidebar />
-      
+        {!isLoaded && (
+          <div>
+            <Preloader onVideoEnd={handleVideoEnd} />
+          </div>
+        )}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Events" element={<Events/>} />
@@ -41,7 +50,11 @@ function App() {
             <Route path="/Privacy" element={<Privacy />} />
             <Route path="/buyTickets" element={<BuyTickets/>}></Route>
           </Routes>
-          <Footer />
+          <ScrollButton/>
+          {/* <AboutUs/>
+          <BuyTickets/>*/}
+          <Footer /> 
+          {/* <Terms/> */}
         </Router>
     </>
   );
