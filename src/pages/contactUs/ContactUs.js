@@ -2,6 +2,7 @@ import './ContactUs.css';
 import '../../components/sidebar/Sidebar';
 import '../../components/newsletter/NewsLetter'
 import ScrollButton from '../../components/scroll/ScrollButton';
+import backpic from './image/img1.jpg' 
 
 
 const ContactUs = () => {
@@ -16,34 +17,34 @@ const ContactUs = () => {
             </p>
         </div>
 
-        <div className="form-wrapper">
-            <div className="outer-box"></div>
+            <div className="form-wrapper">
+                <div className="outer-box"></div>
 
-            <div className="form-container">
-                <form>
-                    <div className="row">
-                        <input type="text" name="first_name" placeholder="First Name*" required />
-                        <input type="text" name="last_name" placeholder="Last Name" />
-                    </div>
+                <div className="form-container">
+                    <form>
+                        <div className="row">
+                            <input type="text" name="first_name" placeholder="First Name*" required />
+                            <input type="text" name="last_name" placeholder="Last Name" />
+                        </div>
 
-                    <div className="row">
-                        <input type="email" name="email" placeholder="Email Address*" required />
-                        <input type="tel" name="contact_number" placeholder="Contact Number*" required />
-                    </div>
+                        <div className="row">
+                            <input type="email" name="email" placeholder="Email Address*" required />
+                            <input type="tel" name="contact_number" placeholder="Contact Number*" required />
+                        </div>
 
-                    <textarea name="comments" placeholder="Comments"></textarea>
+                        <textarea name="comments" placeholder="Comments"></textarea>
 
-                    <div className="checkbox-container">
-                        <input type="checkbox" id="newsletter" name="newsletter" />
-                        <label for="newsletter">Sign me up for the TEDx IIT Guwahati newsletter</label>
-                    </div>
+                        <div className="checkbox-container">
+                            <input type="checkbox" id="newsletter" name="newsletter" />
+                            <label for="newsletter">Sign me up for the TEDx IIT Guwahati newsletter</label>
+                        </div>
 
-                    <div className="button-container">
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
+                        <div className="button-container">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
         
         {/* <ScrollButton /> */}
       </div>
