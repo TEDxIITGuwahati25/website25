@@ -23,8 +23,8 @@ function App() {
   return (
     <>
         <Router>
-        <Sidebar />
-
+     <Sidebar />
+      
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Events" element={<Events/>} />
