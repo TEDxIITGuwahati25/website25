@@ -7,7 +7,7 @@ import impressions from './pics/impressions.svg'
 const Audience = () => {
     return(
         <>
-            <div>
+            <div className='ouraudience'>
                 <div className="Title">
                     <p>Our Audience</p>
                 </div>
@@ -25,19 +25,19 @@ const Audience = () => {
                     </div>
 
                     <div className='Icon'>
-                       <img src={SS} className='SSIcon'></img> 
+                       <img src={SS} className='SSIcon' alt='socialreach'></img> 
                        <div className='IconTitle'>SOCIAL REACH</div>
                        <span className='IconSubTitle'>1.5k+ Fans & Followers</span>
                     </div>
 
                     <div className='Icon'>
-                       <img src={yt} className='YtIcon'></img> 
+                       <img src={yt} className='YtIcon' alt='yticon'></img> 
                        <div className='IconTitle'>YOUTUBE VIEWS</div>
                        <span className='IconSubTitle'>1M+ Views</span>
                     </div>
 
                     <div className='Icon'>
-                       <img src={impressions} className='ImIcon'></img> 
+                       <img src={impressions} className='ImIcon' alt='impressicon'></img> 
                        <div className='IconTitle'>IMPRESSIONS</div>
                        <span className='IconSubTitle'>7K+ Impressions</span>
                     </div>
