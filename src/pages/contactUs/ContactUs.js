@@ -3,7 +3,7 @@ import './ContactUs.css';
 import '../../components/sidebar/Sidebar';
 import '../../components/newsletter/NewsLetter'
 import ScrollButton from '../../components/scroll/ScrollButton';
-import backpic from './image/img1.jpg' 
+//import backpic from './image/img1.jpg' 
 
 
 const ContactUs = () => {
