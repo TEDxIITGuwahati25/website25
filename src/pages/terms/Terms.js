@@ -8,9 +8,15 @@
 //   export default Terms;
 
 import React from "react";
+import { useEffect } from 'react';
 import "./Terms.css"; // Optional: External CSS for styling
 
 const Terms = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+      },[])
+
   return (
     <div className="container">
       <h1>Terms and Conditions</h1>

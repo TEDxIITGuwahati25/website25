@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ContactUs.css';
 import '../../components/sidebar/Sidebar';
 import '../../components/newsletter/NewsLetter'
@@ -7,6 +7,11 @@ import ScrollButton from '../../components/scroll/ScrollButton';
 
 
 const ContactUs = () => {
+  
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+      },[])
+
   const [formData, setFormData] = useState({
     first_name: '',
     last_name: '',
