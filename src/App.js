@@ -19,6 +19,7 @@ import Sidebar from './components/sidebar/Sidebar';
 import Preloader from './components/preloader/Preloader.js'
 import Footer from './components/footer/Footer.js';
 import ScrollButton from './components/scroll/ScrollButton.js'
+import Navbar from './components/navbar/navbar.js'
 
 function App() {
   const [isLoaded,setIsLoaded] =useState(false);
@@ -34,6 +35,7 @@ function App() {
             <Preloader onVideoEnd={handleVideoEnd} />
           </div>
         )}
+        <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Events" element={<Events/>} />
