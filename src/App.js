@@ -14,8 +14,7 @@ import ContactUs from './pages/contactUs/ContactUs.js'
 import Privacy from './pages/privacy/Privacy.js'
 import Terms from './pages/terms/Terms.js'
 import Team from './pages/team/Team.js'
-import BuyTickets from './pages/buyTickets/buyTickets.js'
-import Sidebar from './components/sidebar/Sidebar';
+import BuyTickets from './pages/buyTickets/src/BuyTickets.jsx'
 import Preloader from './components/preloader/Preloader.js'
 import Footer from './components/footer/Footer.js';
 import ScrollButton from './components/scroll/ScrollButton.js'
