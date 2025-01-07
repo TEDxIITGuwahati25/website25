@@ -2,7 +2,8 @@ import styles from './home.module.css'
 import Schedule from './schedule'
 import Timeline from './timeline'
 import { useEffect } from 'react';
-
+import Title
+ from '../../components/home/Title';
 const Home = () => {
 
   useEffect(()=>{
@@ -11,7 +12,7 @@ const Home = () => {
 
   return (
     <>
-      <div>Home Page</div>
+      <div><Title/></div>
     </>
   );
 }
