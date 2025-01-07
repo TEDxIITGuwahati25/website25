@@ -1,5 +1,5 @@
 body {
-    background-color: #2F283C;
+    background-color: #000000;
     color: #ffffff;
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -24,32 +24,32 @@ body {
     font-size: 3rem;
     font-weight: 300;
     margin-top: 0px;
-}
-
-h1, h2, h3 {
-    color: rgb(209, 175, 175);
-}
-
-h1 {
     text-align: center;
     margin-bottom: 30px;
 }
 
-h2 {
-    margin-top: 20px;
+.container h2{
+    color: #e99797;
+    font-weight: 500;
 }
 
-ul {
+/* .container h2 {
+    
+    color: #eb2f2f;
+    margin-top: 20px;
+} */
+
+.container ul {
     list-style-type: square;
     margin-left: 20px;
 }
 
-a {
+.container a {
     color: #CD5C5C;
     text-decoration: none;
 }
 
-a:hover {
+.container a:hover {
     text-decoration: underline;
 }
 

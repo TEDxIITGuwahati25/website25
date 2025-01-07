@@ -4,6 +4,11 @@ import {useState, useEffect} from "react";
 import styles from "./Team.module.css";
 
 const Team = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+      },[])
+
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 570);
 
   useEffect(() => {

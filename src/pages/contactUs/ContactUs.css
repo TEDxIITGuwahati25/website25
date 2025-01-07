@@ -35,6 +35,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    margin-right: 10px;
 }
 
 .outer-box {
@@ -45,6 +46,7 @@
     top: 25px;
     left: 15px;
     z-index: 1;
+    margin-right: 10px;
 }
 
 .form-container {
@@ -55,6 +57,7 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
     z-index: 2;
     margin-bottom: 8%;
+    margin-right: 10px;
     top: 60px;
     left: auto;
     right: -50px;
@@ -125,6 +128,13 @@ textarea {
     color: white;
 }
 
+.successMsg {
+    color: red;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
 /* @media (max-width: 768px) {
     .row {
         flex-direction: column;
@@ -190,6 +200,7 @@ textarea {
         width: 100%;
         height: 100%;
         z-index: 1;
+        margin-right: 10px;
     }
 
     .row {
@@ -231,5 +242,6 @@ textarea {
         background-color: red;
         color: white;
     }
+
 
 }

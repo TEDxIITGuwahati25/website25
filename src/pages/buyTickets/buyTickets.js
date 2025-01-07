@@ -1,9 +1,16 @@
 import styles from './buyTickets.css'
 import axios from 'axios'
 import React from 'react';
+import { useEffect } from 'react';
+
 
 
 const BuyTickets = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+      },[])
+
   const [responseId, setResponseId] = React.useState("");
  const [responseState, setResponseState] = React.useState([]);
 

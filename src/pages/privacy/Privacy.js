@@ -8,15 +8,21 @@
 
 
 import React from "react";
-import "./Privacy.css"; // Make sure to save your CSS in this file
+import { useEffect } from 'react';
+import styles from "./Privacy.module.css"; // Make sure to save your CSS in this file
 
 const Privacy = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+      },[])
+
   return (
-    <div className="container">
+    <div className={styles.container}>
       <h1>Privacy Policy</h1>
       <p className="updated-date">Date updated: 11 January, 2024</p>
 
-      <section className="intro">
+      <section className={styles.intro}>
         <h2>Introduction</h2>
         <p>Welcome to TEDxIITGuwahati.</p>
         <p>
@@ -35,7 +41,7 @@ const Privacy = () => {
         </p>
       </section>
 
-      <section className="definition">
+      <section className={styles.definition}>
         <h2>What is personal information?</h2>
         <p>
           Personal information is information or an opinion about an identified
@@ -45,7 +51,7 @@ const Privacy = () => {
         </p>
       </section>
 
-      <section className="collection">
+      <section className={styles.collection}>
         <h2>How do we collect and hold personal information?</h2>
         <p>
           We may collect your name, address, telephone number, email address, and other
@@ -65,7 +71,7 @@ const Privacy = () => {
         </p>
       </section>
 
-      <section className="use">
+      <section className={styles.use}>
         <h2>Why do we collect your personal information?</h2>
         <p>We collect, hold, use, and disclose personal information about you for a number of reasons, including:</p>
         <ul>
@@ -79,7 +85,7 @@ const Privacy = () => {
         </ul>
       </section>
 
-      <section className="access">
+      <section className={styles.access}>
         <h2>Access and correction</h2>
         <p>
           We will take all reasonable steps to ensure any personal data we collect, use,
@@ -102,12 +108,12 @@ const Privacy = () => {
         </p>
       </section>
 
-      <section className="disclose">
+      <section className={styles.disclose}>
         <h2>Do you disclose overseas?</h2>
         <p>No, we do not disclose personal information to overseas entities. We use Australian data servers to process information.</p>
       </section>
 
-      <section className="changes">
+      <section className={styles.changes}>
         <h2>Does this policy change?</h2>
         <p>
           We will review and update this Privacy Policy from time to time as needed
@@ -117,7 +123,7 @@ const Privacy = () => {
         </p>
       </section>
 
-      <section className="contact">
+      <section className={styles.contact}>
         <h2>How do I contact you?</h2>
         <p>
           If you consider a breach of your Privacy or your rights in relation to privacy
