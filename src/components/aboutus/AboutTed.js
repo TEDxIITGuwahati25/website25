@@ -24,7 +24,7 @@ const AboutTed = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="about_container">
       <h1>The World of TED</h1>
       <div className="content-container">
         <div className="button-container">
