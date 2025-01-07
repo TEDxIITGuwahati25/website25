@@ -4,15 +4,17 @@
     border-radius: 20px;
 }
 
-.container h1{
+.about_container h1{
     color: rgb(255, 0, 0);
     text-align: center;
     font-weight: 400;
     font-size:4cap;
 }
-.container{
+.about_container{
     display: block;
-    min-width: 70%;
+    width: 70%;
+    align-items: center;
+    margin-left: 15%;
 }
 .tab-button{
     background: none;     
