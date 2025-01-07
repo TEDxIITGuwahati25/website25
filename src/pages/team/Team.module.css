@@ -1,97 +1,315 @@
-.Teamiddesktop{
-    width: 19%;
-    padding: 20px;
-    margin: 10px 40px 15px 40px;
-    text-align: center;
-    align-items: center;
+/* Container for team member cards */
+.Teamdesktopdetails {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    padding: 1.25rem;
 }
+
+/* Style for each individual team member box */
+.Teamiddesktop {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+    max-width: 100%;
+}
+
+/* Hover effect on the team member boxes */
+.Teamiddesktop:hover {
+    transform: scale(1.05);
+}
+
+/* Styling the image inside each team member box */
+.Teamiddesktop img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.625rem;
+}
+
+/* Title (name) styling */
 .imgTitleName {
     font-size: 1.2rem;
     font-weight: 500;
-  }
-  
+    color: white;
+}
+
+/* Subtitle (position or role) styling */
 .imgTitlePost {
     font-weight: 300;
-  }
-.Teamiddesktop img{
-    width: 100%;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
 }
-.Team{
-    /* background-color: #1a202c; */
+
+/* Ensuring text is centered below images */
+.Teamiddesktop .imgTitleName p,
+.Teammobile .imgTitleName p {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    margin-left: 0;
+}
+
+/* Targeting the paragraph inside .imgTitlePost (for position) */
+.Teamiddesktop .imgTitlePost p,
+.Teammobile .imgTitlePost p {
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 0;
+}
+
+/* Responsive Design: Tablet Layout (min-width: 480px and max-width: 768px) */
+@media (min-width: 30rem) and (max-width: 48rem) {
+    .Teammobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .Teammobile .Teamidmobile {
+        width: 60%;
+        max-width: 100rem;
+        margin: 0.625rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Teammobile .Teamidmobile img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+        margin-bottom: 0.625rem;
+    }
+
+    .Teammobile .imgTitleName,
+    .Teammobile .imgTitlePost {
+        width: 100%;
+        text-align: center;
+        margin-left: 1rem;
+    }
+
+    .Teammobile .imgTitleName p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+    }
+
+    .Teammobile .imgTitlePost p {
+        font-weight: 300;
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+    }
+
+    .Teammobile h1,
+    .Teammobile p,.Teammobile h4{
+        text-align: left;
+        
+        max-width: 95%;
+    }
+
+    .Teammobile h1 {
+        font-weight: 500;
+        font-size: 2.5rem;
+        margin-top: 0;
+    }
+
+    .Teammobile h4 {
+        font-weight: 500;
+        color: rgb(209, 175, 175);
+        margin-left: 0rem;
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .Teammobile p {
+        max-width: 80%;
+        font-weight: 150;
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.92);
+    }
+}
+
+/* Responsive Design: Desktop Layout (768px to 970px) */
+@media (min-width: 48rem) and (max-width: 60.625rem) {
+    .Teamdesktopdetails {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .Teamiddesktop {
+        width: 100%;
+        max-width: 21.875rem;
+        margin-left: 0.9375rem;
+        margin-right: 0.9375rem;
+    }
+}
+
+@media (min-width: 60.625rem) and (max-width: 68.75rem) {
+    .Teamdesktopdetails {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.3rem;
+        margin-left: 0.5rem;
+    }
+}
+
+/* General styling for overall team section */
+.Team {
     background-color: black;
     color: red;
 }
 
-.Teamdesktopdetails{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.Teamdesktop h1{
+/* Styling for headings in desktop */
+.Teamdesktop h1 {
     color: red;
     max-width: 95%;
     transform: translateX(5%);
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 300;
-    margin-top: 0px;
+    margin-top: 0;
+    margin-left: 0;
 }
-.Teamdesktop h4{
+
+.Teamdesktop h4 {
     max-width: 95%;
-    transform: translateX(5%);
-    font-size: 1.3em;
+    font-size: 1.3rem;
     font-weight: 300;
     color: rgb(209, 175, 175);
+    margin-left: 4.5rem;
 }
-.Teamdesktop p{
-    transform: translateX(6%);
-    max-width: 80%;
-    font-size: 1.1em;
+
+.Teamdesktop p {
+    max-width: 100%;
+    font-size: 1.1rem;
     font-weight: 100;
     color: rgba(255, 255, 255, 0.92);
+    text-align: left;
+    margin-left: 4.5rem;
 }
 
-
-.Teammobile h1{
+/* Styling for the mobile view of team section */
+.Teammobile h1 {
     max-width: 95%;
     transform: translateX(5%);
     font-weight: 500;
-    font-size: 2.5em;
-    margin-top: 0px;
+    font-size: 2.5rem;
+    margin-top: 0;
 }
-.Teammobile h4{
+
+.Teammobile h4 {
     max-width: 95%;
-    transform: translateX(5%);
+    transform: translateX(6%);
     font-weight: 500;
     color: rgb(209, 175, 175);
 }
-.Teammobile p{
+
+.Teammobile p {
     transform: translateX(6%);
     max-width: 80%;
     font-weight: 150;
     color: rgba(255, 255, 255, 0.92);
 }
-.Teamidmobile{
+
+/* Mobile team card style */
+.Teamidmobile {
     width: 40%;
-    padding: 20px;
-    margin: 10px 100px 20px 100px;
+    padding: 1.25rem;
+    margin: 0.625rem 6.25rem 1.25rem 6.25rem;
     text-align: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     color: black;
 }
-.Teamidmobile img{
+
+.Teamidmobile img {
     width: 100%;
 }
-.icon{
+
+/* Styling for the icon section */
+.icon {
     background-color: rgb(255, 255, 255);
     position: relative;
     left: 30%;
     width: 10%;
     height: 10%;
 }
-.icondiv{
+
+.icondiv {
     visibility: hidden;
 }
-.linkedin:hover div{
+
+.linkedin:hover div {
     visibility: visible;
+}
+
+/* Circle image styling */
+.imageCircle {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(175, 46, 46);
+    position: relative;
+    z-index: 100;
+}
+
+.imageCircle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 101;
+}
+
+.imageCircle img:hover {
+    transform: scale(1.2);
+}
+
+/* Before pseudo-element for circle image hover effect */
+.imageCircle::before {
+    content: "";
+    width: 17rem;
+    height: 8.5rem;
+    background-color: rgb(158, 15, 15);
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform-origin: center bottom;
+    transition: transform 0.3s ease;
+    z-index: 5;
+}
+
+.imageCircle:hover::before {
+    transform: rotate(180deg);
 }
