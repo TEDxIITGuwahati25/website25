@@ -94,21 +94,30 @@ header h2{
     align-items: center;
     text-align: center;
     cursor: pointer;
+    transition: 1s ;
+    filter: brightness(80%);
 }
 .speaker img{
     width : 20vw;
     height: 20vw;
+    display: block;
 }
 .speaker h3{
     margin-top: 10px;
     font-size: 1.2em;
     font-weight: 700;
-    color: #e62b1e;
-    transition: 0.4s;
+    color:  #cdcdcd;
+    transition: 1s;
 }
 .speaker:hover h3{
-   color: #cdcdcd;
+  color: #cdcdcd;
+  background-color: #e62b1e;
 }
+.speaker:hover {
+    scale: 1.1;
+    filter: brightness(100%);
+}
+
 #team{
     width: 100%;
     padding: 0 8vw;
@@ -133,6 +142,7 @@ header h2{
     align-items: center;
     text-align: center;
 }
+
 .member img{
     width : 20vw;
     height: 20vw;
