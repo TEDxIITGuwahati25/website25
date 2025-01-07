@@ -6,11 +6,11 @@ const Teamiddesktop = (img, name, position, linkedin) => {
         <div className={styles.Teamiddesktop}>
             <div className={styles.linkedin}>
                 <a href={linkedin} target="_blank" rel="noopener noreferrer">
-                    <div className={styles.imgContainer}>
+                    <div className={styles.imageCircle}>
                         <img src={img} alt={`${name}`} />
-                        <div className={styles.icondiv}>
-                            <FaLinkedin className={styles.icon} />
-                        </div>
+                    </div>
+                    <div className={styles.icondiv}>
+                        <FaLinkedin className={styles.icon} />
                     </div>
                 </a>
             </div>
