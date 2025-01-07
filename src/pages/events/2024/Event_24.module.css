@@ -60,7 +60,7 @@ header h2{
 #about h2{
     font-size: 2em;
     color: #e62b1e;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 3vh;
 }
 #about p{
@@ -78,7 +78,7 @@ header h2{
 #speakers h2{
     font-size: 2em;
     color: #e62b1e;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 4vh;
 }
 #speakerContainer{
@@ -117,7 +117,7 @@ header h2{
 #team h2{
     font-size: 2em;
     color: #e62b1e;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 4vh;
 }
 #teamContainer{
