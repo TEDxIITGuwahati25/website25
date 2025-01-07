@@ -50,14 +50,6 @@ body{
   text-decoration: none;
 }
 
-.readdiv{
-  display: flex;
-  color: rgb(128, 128, 128);
-  margin-inline: 1%;
-}
-.readinfo{
-  display: inline;
-}
 
 @media screen and (max-width: 800px){
     .blogs{
