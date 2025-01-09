@@ -1,4 +1,4 @@
-body {
+.priv_container {
     background-color: #000000;
     color: #ffffff;
     font-family: Arial, sans-serif;
@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-.container {
+.priv_container {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
@@ -16,7 +16,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.container h1 {
+.priv_container h1 {
     color: red;
     max-width: 95%;
     transform: translateX(5%);
@@ -28,7 +28,7 @@ body {
     margin-bottom: 30px;
 }
 
-.container h2{
+.priv_container h2{
     color: #e99797;
     font-weight: 500;
 }
@@ -39,17 +39,17 @@ body {
     margin-top: 20px;
 } */
 
-.container ul {
+.priv_container ul {
     list-style-type: square;
     margin-left: 20px;
 }
 
-.container a {
+.priv_container a {
     color: #CD5C5C;
     text-decoration: none;
 }
 
-.container a:hover {
+.priv_container a:hover {
     text-decoration: underline;
 }
 

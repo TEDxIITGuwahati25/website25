@@ -18,7 +18,7 @@ const Privacy = () => {
       },[])
 
   return (
-    <div className={styles.container}>
+    <div className={styles.priv_container}>
       <h1>Privacy Policy</h1>
       <p className="updated-date">Date updated: 11 January, 2024</p>
 
