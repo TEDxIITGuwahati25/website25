@@ -27,7 +27,7 @@ const Audience = () => {
                     <div className='Icon'>
                        <img src={SS} className='SSIcon' alt='socialreach'></img> 
                        <div className='IconTitle'>SOCIAL REACH</div>
-                       <span className='IconSubTitle'>2k+ Fans & Followers</span>
+                       <span className='IconSubTitle'>2K+ Fans & Followers</span>
                     </div>
 
                     <div className='Icon'>

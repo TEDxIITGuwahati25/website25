@@ -11,7 +11,7 @@ const SpeakerCard = ({ name, id, image, func }) => {
                 onMouseLeave={() => setHoveredId(null)}
             >
                 <img src={image} alt="Speaker Image" />
-                <div>
+                <div className={styles.data}>
                   <h3>{hoveredId === id ? "Know more" : name}</h3>
                   
                    

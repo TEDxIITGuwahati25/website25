@@ -109,12 +109,22 @@ header h2{
     color:  #cdcdcd;
     transition: 1s;
 }
+.data{
+    width: 60%;
+    margin-inline: 20%;
+}
 .speaker:hover h3{
   color: #cdcdcd;
   background-color: #e62b1e;
+  text-align: center;
+  width: 80%;
+  margin-inline: 10%;
+  font-weight: 500;
+  border-radius: 20px;
+  
 }
 .speaker:hover {
-    scale: 1.1;
+    scale: 1.01;
     filter: brightness(100%);
 }
 
