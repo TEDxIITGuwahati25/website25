@@ -17,7 +17,7 @@ import Team from './pages/team/Team.js'
 import BuyTickets from "./pages/buyTickets/src/BuyTickets.jsx";
 import Preloader from './components/preloader/Preloader.js'
 import Footer from './components/footer/Footer.js';
-import ScrollButton from './components/scroll/ScrollButton.js'
+// import ScrollButton from './components/scroll/ScrollButton.js'
 import Navbar from './components/navbar/navbar.js'
 
 function App() {
@@ -51,7 +51,7 @@ function App() {
             <Route path="/Privacy" element={<Privacy />} />
             <Route path="/buyTickets" element={<BuyTickets/>}></Route>
           </Routes>
-          <ScrollButton/>
+          {/* <ScrollButton/> */}
           <Footer /> 
         </Router>
     </>
