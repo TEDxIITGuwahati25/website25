@@ -4,7 +4,7 @@ import styles from "./events.module.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarCheck } from "@fortawesome/free-regular-svg-icons";
-
+import Gallery from "../../components/events/gallery";
 const Events = () => {
   const { ref: myref, inView: boxisvisible, entry } = useInView();
   const { ref: myref2, inView: boxisvisible2, entry2 } = useInView();
@@ -19,6 +19,7 @@ const Events = () => {
 
   return (
     <div>
+      <Gallery/>
       <div className={styles.upper}>
         <div className={styles.mainhead}>
         </div>
