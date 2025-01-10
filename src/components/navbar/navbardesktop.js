@@ -9,11 +9,11 @@ const Navbardesktop = () => {
         <div className={styles.navbardesktop}>
                     <div className={styles.img}><img src="./images/WhiteTextLogo.png"></img></div>
                     <div className={styles.div1}><NavLink to="/" style={({isActive})=>showActivePage(isActive,'red')}>Home</NavLink></div>
-                    <div className={styles.div2}><NavLink to="/AboutUs" style={({isActive})=>showActivePage(isActive,'red')}>About</NavLink></div>
+                    <div className={styles.div2}><NavLink to="/AboutUs" style={({isActive})=>showActivePage(isActive,'red')}>About Us</NavLink></div>
                     <div className={styles.div3}><NavLink to="/Team" style={({isActive})=>showActivePage(isActive,'red')}>Team</NavLink></div>
                     <div className={styles.div4}><NavLink to="/Events" style={({isActive})=>showActivePage(isActive,'red')}>Events</NavLink></div>
                     
-                    <div className={styles.div6}><NavLink to="/ContactUs" style={({isActive})=>showActivePage(isActive,'red')}>Contact</NavLink></div>
+                    <div className={styles.div6}><NavLink to="/ContactUs" style={({isActive})=>showActivePage(isActive,'red')}>Contact Us</NavLink></div>
                     <div className={styles.div7}><a href="https://www.instagram.com/tedxiitguwahati/"><img src="images/Instalogo.png"></img></a></div>
                     <div className={styles.div5}>
                     <NavLink to="/buyTickets">
