@@ -1,9 +1,9 @@
 import animationVideo from '../../animation/preloader.mp4';
-import styles from './Preloader.module.css';
+import  './Preloader.css';
 
 const Preloader = ({ onVideoEnd }) => {
     return (
-        <div className={styles.preloader}>
+        <div className="preloader">
             <video
                 className="preloader-video"
                 autoPlay

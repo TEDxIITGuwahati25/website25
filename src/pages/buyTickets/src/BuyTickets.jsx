@@ -15,10 +15,10 @@ function BuyTickets() {
       
       <main className="main-content">
         <div className="hero">
-          <h1 className="hero-title">Seaside Citadel</h1>
-          <p className="hero-description">
+          <h1 className="hero-title">Buy Tickets</h1>
+          {/* <p className="hero-description">
             Buy Tickets
-          </p>
+          </p> */}
         </div>
 
         <div className="content-grid">

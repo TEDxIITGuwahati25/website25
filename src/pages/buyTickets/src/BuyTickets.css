@@ -21,10 +21,9 @@
 }
 
 .hero-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #ffffff;
+  font-size: 300%;
+  font-weight: 100;
+  color: #ff0000bd;
 }
 
 .hero-description {
