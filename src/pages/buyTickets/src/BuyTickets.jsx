@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ArcadeTicket from './components/ArcadeTicket';
 import ExclusiveBenefits from './components/ExclusiveBenefits';
 import './BuyTickets.css';
 
 
 function BuyTickets() {
+  useEffect(()=>{
+      window.scrollTo(0, 0);
+        },[])
+  
   const handleBook = () => {
     alert('Booking functionality will be implemented here!');
   };
