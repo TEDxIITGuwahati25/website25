@@ -14,11 +14,11 @@ import ContactUs from './pages/contactUs/ContactUs.js'
 import Privacy from './pages/privacy/Privacy.js'
 import Terms from './pages/terms/Terms.js'
 import Team from './pages/team/Team.js'
-import BuyTickets from './pages/buyTickets/buyTickets.js'
-import Sidebar from './components/sidebar/Sidebar';
+import BuyTickets from "./pages/buyTickets/src/BuyTickets.jsx";
 import Preloader from './components/preloader/Preloader.js'
 import Footer from './components/footer/Footer.js';
 import ScrollButton from './components/scroll/ScrollButton.js'
+import Navbar from './components/navbar/navbar.js'
 
 function App() {
   const [isLoaded,setIsLoaded] =useState(false);
@@ -34,6 +34,7 @@ function App() {
             <Preloader onVideoEnd={handleVideoEnd} />
           </div>
         )}
+        <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Events" element={<Events/>} />
@@ -51,10 +52,7 @@ function App() {
             <Route path="/buyTickets" element={<BuyTickets/>}></Route>
           </Routes>
           <ScrollButton/>
-          {/* <AboutUs/>
-          <BuyTickets/>*/}
           <Footer /> 
-          {/* <Terms/> */}
         </Router>
     </>
   );

@@ -9,6 +9,7 @@ const Teamdesktop = () => {
                lives you can find us working in design, computer science, chemistry, biology, finance, NGOs, arts, business, psycology, health and 
                everything in between. We work year round to bring TEDxIITGuwahati and all of our activities to life.</p>
             <div className={styles.Teamdesktopdetails}>
+            
               {Teamiddesktop("images/team/Pranati_Tandon4.png","Pranati Tandon","Licensee","https://www.linkedin.com/in/pranati-tandon-a002b127a/")}
               {Teamiddesktop("images/team/Devesh_Kamble.png","Devesh Kamble","Co-Licensee & Marketing Head","https://www.linkedin.com/in/devesh-kamble")}
               {Teamiddesktop("images/team/Tanvi.png","Tanvi Doshi","Content Head","https://www.linkedin.com/in/tanvi-doshi-ba951b28b")}
@@ -20,9 +21,10 @@ const Teamdesktop = () => {
               {Teamiddesktop("images/team/Japleen2.png","Japleen Kaur","Speakers Head","https://www.linkedin.com/in/japleen-kaur-b10377260/")}
               {Teamiddesktop("images/team/Anaswara2.png","Anaswara","Speaker Core","https://www.linkedin.com/in/anaswara-p-c-b99355141/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app")}
               {Teamiddesktop("images/team/Divya2.png","Divya Sahiti","PR & Media Head","https://www.linkedin.com/in/divya-sahiti-yerramsetti-499a0924b/")}
-              {Teamiddesktop("images/team/Ayush2.png","Ayush Agarwal","PR & Media Core","https://www.linkedin.com/in/aayush-agarwal-iitg/")}
+              {Teamiddesktop("images/team/Ayush2.png","Aayush Agarwal","PR & Media Core","https://www.linkedin.com/in/aayush-agarwal-iitg/")}
             </div>
-        </div>
+            </div>
+       
     );
 }
  

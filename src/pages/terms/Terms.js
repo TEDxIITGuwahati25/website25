@@ -9,7 +9,7 @@
 
 import React from "react";
 import { useEffect } from 'react';
-import "./Terms.css"; // Optional: External CSS for styling
+import styles from"./Terms.module.css"; // Optional: External CSS for styling
 
 const Terms = () => {
 
@@ -18,9 +18,9 @@ const Terms = () => {
       },[])
 
   return (
-    <div className="container">
+    <div className={styles.container}>
       <h1>Terms and Conditions</h1>
-      <p className="updated-date">Date Updated: 14 December, 2024</p>
+      <p className={styles.updated_date}>Date Updated: 14 December, 2024</p>
 
       <h2>Introduction</h2>
       <p>

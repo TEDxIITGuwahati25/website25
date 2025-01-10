@@ -1,13 +1,13 @@
-
 #body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter";
+    /* font-family: "Inter"; */
 }
-header{
+
+header {
     color: #d2d2d2;
     margin: 5vh 0;
     width: 100%;
@@ -16,128 +16,167 @@ header{
     justify-content: space-between;
     padding: 0 8vw;
 }
-header div{
+
+header div {
     display: flex;
     height: 100%;
 }
-#theme{
+
+#theme {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-header div img{
+
+header div img {
     height: 100px;
     margin-right: 10px;
 }
-#theme h1:nth-child(1){
+
+#theme h1:nth-child(1) {
     font-size: 2.2em;
     font-weight: 700;
     color: #e62b1e;
 }
-#theme h1:nth-child(2){
+
+#theme h1:nth-child(2) {
     font-size: 3.3em;
     font-weight: 900;
 }
-header h2{
+
+header h2 {
     font-size: 1em;
     font-weight: 500;
 }
 
-#banner{
+#banner {
     width: 100%;
     padding: 0 8vw;
     margin-bottom: 5vh;
 }
-#banner img{
+
+#banner img {
     width: 100%;
 }
-#about{
+
+#about {
     width: 100%;
     padding: 0 8vw;
     margin-bottom: 5vh;
 }
-#about h2{
+
+#about h2 {
     font-size: 2em;
     color: #e62b1e;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 3vh;
 }
-#about p{
+
+#about p {
     color: #d2d2d2;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.2em;
     line-height: 1.4;
 }
 
-#speakers{
+#speakers {
     width: 100%;
     padding: 0 8vw;
     margin-bottom: 5vh;
 }
-#speakers h2{
+
+#speakers h2 {
     font-size: 2em;
     color: #e62b1e;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 4vh;
 }
-#speakerContainer{
+
+#speakerContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 50px;
-    column-gap: 5vw;;
+    column-gap: 5vw;
+    ;
 }
-.speaker{
-    display : flex;
-    flex-direction : column;
+
+.speaker {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     cursor: pointer;
 }
-.speaker img{
-    width : 20vw;
+
+.speaker img {
+    width: 20vw;
     height: 20vw;
 }
-.speaker h3{
+
+.speaker h3 {
     margin-top: 10px;
     font-size: 1.2em;
     font-weight: 700;
-    color: #e62b1e;
-    transition: 0.4s;
+    color: #cdcdcd;
+    transition: 1s;
+    width: 100%;
 }
-.speaker:hover h3{
-   color: #cdcdcd;
+
+.data {
+    width: 80%;
+    margin-inline: 10%;
 }
-#team{
+
+.speaker:hover h3 {
+    color: #cdcdcd;
+    background-color: #e62b1e;
+    text-align: center;
+    width: 60%;
+    margin-inline: 20%;
+    font-weight: 500;
+    border-radius: 20px;
+}
+.speaker:hover {
+    scale: 1.01;
+}
+
+#team {
     width: 100%;
     padding: 0 8vw;
     margin-bottom: 5vh;
 }
-#team h2{
+
+#team h2 {
     font-size: 2em;
     color: #e62b1e;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 4vh;
 }
-#teamContainer{
+
+#teamContainer {
     color: rgb(199, 199, 199);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 40px;
-    column-gap: 6vw;;
+    column-gap: 6vw;
+    ;
 }
-.member{
-    display : flex;
-    flex-direction : column;
+
+.member {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
 }
-.member img{
-    width : 20vw;
+
+.member img {
+    width: 20vw;
     height: 20vw;
 }
-.member h3{
+
+.member h3 {
     margin-top: 10px;
     font-size: 1.3em;
     font-weight: 700;
@@ -146,166 +185,218 @@ header h2{
 
 
 @media (max-width: 1000px) {
-    header div img{
+    header div img {
         height: 80px;
     }
-    #theme h1:nth-child(1){
+
+    #theme h1:nth-child(1) {
         font-size: 1.8em;
     }
-    #theme h1:nth-child(2){
+
+    #theme h1:nth-child(2) {
         font-size: 2.8em;
     }
-    header h2{
+
+    header h2 {
         font-size: 1em;
     }
-    #about p{
+
+    #about p {
         font-weight: 400;
         font-size: 1em;
         line-height: 1.4;
     }
+
     /* #teamContainer, #speakerContainer{
         grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
     } */
-    
+
 }
+
 @media (max-width: 800px) {
-    header div img{
+    header div img {
         height: 65px;
     }
-    #theme h1:nth-child(1){
+
+    #theme h1:nth-child(1) {
         font-size: 1.4em;
     }
-    #theme h1:nth-child(2){
+
+    #theme h1:nth-child(2) {
         font-size: 2.3em;
     }
-    header h2{
+
+    header h2 {
         font-size: 0.9em;
     }
-    #about p{
+
+    #about p {
         font-weight: 400;
         font-size: 1em;
         line-height: 1.4;
     }
-    #teamContainer, #speakerContainer{
+
+    #teamContainer,
+    #speakerContainer {
         row-gap: 50px;
         grid-template-columns: repeat(2, 1fr);
     }
-    .speaker img , .member img{
-        width : 32vw;
+
+    .speaker img,
+    .member img {
+        width: 32vw;
         height: 32vw;
     }
-    
+
 }
+
 @media (max-width: 640px) {
-    header div img{
+    header div img {
         height: 55px;
     }
-    #theme h1:nth-child(1){
+
+    #theme h1:nth-child(1) {
         font-size: 1.2em;
     }
-    #theme h1:nth-child(2){
+
+    #theme h1:nth-child(2) {
         font-size: 2.0em;
     }
-    header h2{
+
+    header h2 {
         font-size: 0.8em;
     }
-    #about p{
+
+    #about p {
         font-size: 0.9em;
         line-height: 1.2;
     }
-    #teamContainer, #speakerContainer{
+
+    #teamContainer,
+    #speakerContainer {
         row-gap: 30px;
         grid-template-columns: repeat(2, 1fr);
     }
-    .speaker img , .member img{
-        width : 40vw;
+
+    .speaker img,
+    .member img {
+        width: 40vw;
         height: 40vw;
     }
-    #team h2, #speakers h2, #about h2{
+
+    #team h2,
+    #speakers h2,
+    #about h2 {
         font-size: 1.7em;
     }
-    .speaker h3{
+
+    .speaker h3 {
         margin-top: 6px;
         font-size: 1.1em;
     }
-    .member h3{
+
+    .member h3 {
         margin-top: 6px;
         font-size: 1.1em;
     }
-    .member h4{
+
+    .member h4 {
         font-size: 1em;
     }
 }
+
 @media (max-width: 540px) {
-    header{
+    header {
         margin: 4vh 0;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
         gap: 15px;
     }
-    header div img{
+
+    header div img {
         height: 16vw;
     }
-    #theme h1:nth-child(1){
+
+    #theme h1:nth-child(1) {
         font-size: 6vw;
     }
-    #theme h1:nth-child(2){
+
+    #theme h1:nth-child(2) {
         font-size: 8vw;
     }
-    header h2{
+
+    header h2 {
         font-size: 3vw;
     }
-    #about p{
+
+    #about p {
         font-size: 1.1em;
         line-height: 1.2;
     }
-    #teamContainer, #speakerContainer{
+
+    #teamContainer,
+    #speakerContainer {
         row-gap: 30px;
         grid-template-columns: repeat(1, 1fr);
     }
-    .speaker img , .member img{
-        width : 80vw;
+
+    .speaker img,
+    .member img {
+        width: 80vw;
         height: 80vw;
     }
-    #team h2, #speakers h2, #about h2{
+
+    #team h2,
+    #speakers h2,
+    #about h2 {
         font-size: 1.7em;
         margin-bottom: 1.5vh;
     }
-    .speaker h3{
+
+    .speaker h3 {
         margin-top: 6px;
         font-size: 3.8vw;
     }
-    .member h3{
+
+    .member h3 {
         margin-top: 6px;
         font-size: 4vw;
     }
-    .member h4{
+
+    .member h4 {
         font-size: 3.3vw;
     }
-    #banner{
+
+    #banner {
         margin-bottom: 3vh;
     }
 }
 
-@media (max-width: 380px){
-    #about p{
+@media (max-width: 380px) {
+    #about p {
         font-size: 1em;
         line-height: 1.1;
     }
-    #team h2, #speakers h2, #about h2{
+
+    #team h2,
+    #speakers h2,
+    #about h2 {
         font-size: 1.5em;
         margin-bottom: 1.7vh;
     }
-    .speaker h3{
+
+    .speaker h3 {
         margin-top: 7px;
         font-size: 4.5vw;
     }
-    .member h3{
+
+    .member h3 {
         margin-top: 6px;
         font-size: 5vw;
     }
-    .member h4{
+
+    .member h4 {
         font-size: 4vw;
     }
 }
@@ -325,30 +416,33 @@ header h2{
     background-color: #2f283c;
     border-radius: 7px;
     z-index: 10;
-    width:  1000px;
+    width: 1000px;
     max-width: 80%;
 
-  }
-  
-  .popUpHeader {
+}
+
+.popUpHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1vh;
-  }
-  .popUp hr {
+}
+
+.popUp hr {
     width: 400px;
     max-width: 80%;
     border: 0.5px solid #c1c1c1;
     margin-bottom: 2.5vh;
-  }
-  .popUpHeader .popUptitle {
+}
+
+.popUpHeader .popUptitle {
     font-family: var(--font-inter);
     font-weight: 800;
     font-size: 1.9em;
     color: #e62b1e;
-  }
-  .popUpHeader .closeBtn {
+}
+
+.popUpHeader .closeBtn {
     cursor: pointer;
     border: none;
     outline: none;
@@ -358,12 +452,14 @@ header h2{
     color: #c1c1c1;
     position: relative;
     transition: all ease 0.4s;
-  }
-  .circle{
+}
+
+.circle {
     display: none;
     transition: all ease 0.4s;
-  }
-  .closeBtn:hover .circle{
+}
+
+.closeBtn:hover .circle {
     position: absolute;
     display: block;
     padding-bottom: 10px;
@@ -376,40 +472,47 @@ header h2{
     color: #1c1c1c;
     border-radius: 50%;
     transition: 1s;
-  }
-  .speakerImg{
+}
+
+.speakerImg {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .speakerImg img{
+}
+
+.speakerImg img {
     width: 20vw;
-  }
-  .speakerImg h2{
+}
+
+.speakerImg h2 {
     margin-top: 10px;
     font-size: 1.5em;
     font-weight: 600;
     text-align: center;
-  }
-  .popUpBody{
+}
+
+.popUpBody {
     color: #c1c1c1;
     display: flex;
     gap: 20px;
-  }
-  .popUpBodyimg{
+}
+
+.popUpBodyimg {
     height: 250px;
     width: 250px;
-  }
-  .description p{
+}
+
+.description p {
     font-weight: 400;
     font-size: 1.1em;
     line-height: 1.2;
-  }
-  /* In your Event_24.module.css */
-  
-  .watchTalk {
+}
+
+/* In your Event_24.module.css */
+
+.watchTalk {
     margin-top: 180px;
-    padding: 4px 16px; 
+    padding: 4px 16px;
     height: 50px;
     background-color: rgb(211, 27, 27);
     color: white;
@@ -419,16 +522,18 @@ header h2{
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s ease;
-  }
-  a {
+}
+
+a {
     color: #c1c1c1;
     text-decoration: none;
-  }
-  .watchTalk:hover {
+}
+
+.watchTalk:hover {
     background-color: rgb(206, 139, 139);
-  }
-  
-  #overlay {
+}
+
+#overlay {
     position: fixed;
     /* opacity: 1; */
     top: 0;
@@ -436,9 +541,9 @@ header h2{
     bottom: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.846);
-  }
+}
 
-  @media (max-width: 1000px){
+@media (max-width: 1000px) {
     .popUp {
         padding: 3.5vh;
         padding-top: 2.5vh;
@@ -446,103 +551,123 @@ header h2{
         transition: 300ms linear;
         border-radius: 7px;
         z-index: 10;
-        width:  1000px;
+        width: 1000px;
         min-height: 60%;
         max-width: 90%;
-      }
-      .popUpBody{
+    }
+
+    .popUpBody {
         margin-top: 5%;
         gap: 20px;
-      }
-  }
-  @media (max-width: 750px){
+    }
+}
+
+@media (max-width: 750px) {
     .popUp {
         padding-top: 2.5vh;
         max-width: 90%;
-      }
-      .popUpBody{
+    }
+
+    .popUpBody {
         margin-top: 7%;
-      }
-  }
-  @media (max-width: 700px){
+    }
+}
+
+@media (max-width: 700px) {
     .popUp {
         max-width: 90%;
-      }
-      .speakerImg{
+    }
+
+    .speakerImg {
         width: fit-content;
         float: left;
         margin-right: 15px;
-      }
-      .speakerImg h2{
+    }
+
+    .speakerImg h2 {
         margin-top: 5px;
-      }
-      .popUpBody{
+    }
+
+    .popUpBody {
         margin-top: 3%;
         display: inline-block;
-      }
-      .speakerImg img{
+    }
+
+    .speakerImg img {
         width: 30vw;
         float: left;
-      }
-      .description{
+    }
+
+    .description {
         display: inline;
         /* width: 30%; */
-      }
-      .description p{
-        display: inline;
-      }
-  }
+    }
 
-  @media (max-width: 500px){
+    .description p {
+        display: inline;
+    }
+}
+
+@media (max-width: 500px) {
     .popUp {
         padding: 2vh;
         max-height: 95%;
         max-width: 95%;
-      }
-      .speakerImg{
+    }
+
+    .speakerImg {
         width: 100%;
-        float:none;
+        float: none;
         margin-right: 0;
-      }
-      .speakerImg h2{
+    }
+
+    .speakerImg h2 {
         margin-top: 5px;
-      }
-      .popUpBody{
+    }
+
+    .popUpBody {
         margin-top: 3%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-      }
-      .speakerImg img{
+    }
+
+    .speakerImg img {
         width: 40vw;
         float: none;
-      }
-      .popUpBodyimg{
+    }
+
+    .popUpBodyimg {
         height: 50vw;
         width: 50vw;
-      }
-      .description{
+    }
+
+    .description {
         display: block;
         text-align: center;
         /* width: 30%; */
-      }
-      .description p{
+    }
+
+    .description p {
         display: inline;
         font-size: 4vw;
-      }
-  }
-  @media (max-width: 400px){
-    .popUpHeader{
+    }
+}
+
+@media (max-width: 400px) {
+    .popUpHeader {
         margin-bottom: 0.5vh;
     }
-    .popUpHeader .popUptitle{
+
+    .popUpHeader .popUptitle {
         font-size: 1.5em;
     }
-    .description p{
+
+    .description p {
         font-weight: 400;
         font-size: 4vw;
         line-height: 1.2;
-      }
+    }
 
-  }
+}

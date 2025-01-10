@@ -1,5 +1,5 @@
 import animationVideo from '../../animation/preloader.mp4';
-import './Preloader.css';
+import  './Preloader.css';
 
 const Preloader = ({ onVideoEnd }) => {
     return (

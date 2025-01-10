@@ -11,7 +11,7 @@ const Teammobile = () => {
                business, psycology, health and everything in between. We work year round to
                bring TEDxIITGuwahati and all of our activities to life.
             </p>
-            <div>
+            
               {Teamidmobile("images/team/Pranati_Tandon4.png","Pranati Tandon","Licensee","https://www.linkedin.com/in/pranati-tandon-a002b127a/")}
               {Teamidmobile("images/team//Devesh_Kamble.png","Devesh Kamble","Co-Licensee & Marketing Head","https://www.linkedin.com/in/devesh-kamble")}
               {Teamidmobile("images/team/Tanvi.png","Tanvi Doshi","Content Head","https://www.linkedin.com/in/tanvi-doshi-ba951b28b")}
@@ -23,9 +23,9 @@ const Teammobile = () => {
               {Teamidmobile("images/team/Japleen2.png","Japleen Kaur","Speakers Head","https://www.linkedin.com/in/japleen-kaur-b10377260/")}
               {Teamidmobile("images/team/Anaswara2.png","Anaswara","Speaker Core","https://www.linkedin.com/in/anaswara-p-c-b99355141/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app")}
               {Teamidmobile("images/team/Divya2.png","Divya Sahiti","PR & Media Head","https://www.linkedin.com/in/divya-sahiti-yerramsetti-499a0924b/")}
-              {Teamidmobile("images/team/Ayush2.png","Ayush Agarwal","PR & Media Core","https://www.linkedin.com/in/aayush-agarwal-iitg/")}
+              {Teamidmobile("images/team/Ayush2.png","Aayush Agarwal","PR & Media Core","https://www.linkedin.com/in/aayush-agarwal-iitg/")}
             </div>
-        </div>
+       
     );
 }
  

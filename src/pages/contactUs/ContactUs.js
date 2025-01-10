@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import styles from './ContactUs.module.css'
-import '../../components/sidebar/Sidebar';
-import '../../components/newsletter/NewsLetter'
 import ScrollButton from '../../components/scroll/ScrollButton';
 
 const ContactUs = () => {

@@ -24,7 +24,7 @@ const AboutTed = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="about_container">
       <h1>The World of TED</h1>
       <div className="content-container">
         <div className="button-container">
@@ -56,7 +56,10 @@ const AboutTed = () => {
             About TEDxIITGuwahati
           </button>
         </div>
-        <div className="box">{content}</div>
+        <div className="boxdiv">
+          <div className="box">{content}</div>
+        </div>
+        
       </div>
     </div>
   );

@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter";
+    /* font-family: "Inter"; */
 }
 header{
     color: #d2d2d2;
@@ -60,12 +60,12 @@ header h2{
 #about h2{
     font-size: 2em;
     color: #e62b1e;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 3vh;
 }
 #about p{
     color: #d2d2d2;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.2em;
     line-height: 1.4;
 }
@@ -78,7 +78,7 @@ header h2{
 #speakers h2{
     font-size: 2em;
     color: #e62b1e;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 4vh;
 }
 #speakerContainer{
@@ -94,21 +94,40 @@ header h2{
     align-items: center;
     text-align: center;
     cursor: pointer;
+    transition: 1s ;
+    filter: brightness(80%);
 }
 .speaker img{
     width : 20vw;
     height: 20vw;
+    display: block;
 }
 .speaker h3{
     margin-top: 10px;
     font-size: 1.2em;
     font-weight: 700;
-    color: #e62b1e;
-    transition: 0.4s;
+    color:  #cdcdcd;
+    transition: 1s;
+}
+.data{
+    width: 60%;
+    margin-inline: 20%;
 }
 .speaker:hover h3{
-   color: #cdcdcd;
+  color: #cdcdcd;
+  background-color: #e62b1e;
+  text-align: center;
+  width: 80%;
+  margin-inline: 10%;
+  font-weight: 500;
+  border-radius: 20px;
+  
 }
+.speaker:hover {
+    scale: 1.01;
+    filter: brightness(100%);
+}
+
 #team{
     width: 100%;
     padding: 0 8vw;
@@ -117,7 +136,7 @@ header h2{
 #team h2{
     font-size: 2em;
     color: #e62b1e;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 4vh;
 }
 #teamContainer{
@@ -133,6 +152,7 @@ header h2{
     align-items: center;
     text-align: center;
 }
+
 .member img{
     width : 20vw;
     height: 20vw;

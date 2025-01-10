@@ -32,7 +32,7 @@
 
 .footer-col2 a, .footer-col2 .footer-link {
     display: block;
-    margin-bottom: 0.625rem;
+    margin-bottom: 0rem;
     color: white;
     text-decoration: none;
    
@@ -155,7 +155,9 @@ h4.footer-heading {
         width: 100%;
         margin-left: 0;
     }
-
+    .footer-col1, .footer-col2, .footer-col3 {
+        margin-bottom: -2.2rem;  
+    }
     .footer-social {
         order: 1;
         display: flex;
@@ -240,6 +242,7 @@ h4.footer-heading {
     .footer-col3{
         margin-left: 0rem;
         font-size: 0.8rem;
+        line-height: 2rem;
     }
     .footer-col3 h4{
         margin-top: 2.7rem;
@@ -248,7 +251,11 @@ h4.footer-heading {
         width:53%;
         
     }  
-    
-  
+    .footer-col2 a, .footer-col2 .footer-link {
+        margin-bottom: 0.6005rem;
+    }  
+    .row2 h4{
+        margin-left: 0rem;
+    }
        
 }
