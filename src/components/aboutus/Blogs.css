@@ -14,8 +14,8 @@ body{
     text-align: center;
     font-weight: 400;
     font-size: 4cap; 
-    margin-top: 4%;
-    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-bottom: 1%;
 }
 .title{
   color: whitesmoke;
@@ -24,7 +24,7 @@ body{
 }
 .p1{
   width: 100%;
-  border: 1px solid white;
+  
   border-radius: 20px;
 }
 .blogs{

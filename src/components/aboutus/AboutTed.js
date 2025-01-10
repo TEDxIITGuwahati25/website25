@@ -56,7 +56,10 @@ const AboutTed = () => {
             About TEDxIITGuwahati
           </button>
         </div>
-        <div className="box">{content}</div>
+        <div className="boxdiv">
+          <div className="box">{content}</div>
+        </div>
+        
       </div>
     </div>
   );
