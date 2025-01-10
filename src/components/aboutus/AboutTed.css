@@ -1,7 +1,16 @@
+.maintitle{
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-weight: 250;
+    font-size: 4cap; 
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
 .content-container{
     background-color: rgba(113, 112, 112, 0.3);
     width: fit-content;
     border-radius: 20px;
+    padding: 2% 2% 2% 2%;
 }
 
 .about_container h1{
@@ -16,6 +25,7 @@
     width: 70%;
     align-items: center;
     margin-left: 15%;
+    
 }
 .tab-button{
     background: none;     
@@ -33,6 +43,7 @@
 }
 .box{
     padding: 0 10% 5% 10%;
+    margin-top: 2%;
 }
 
 .tab-button:hover {
@@ -44,13 +55,33 @@
 .tab-button.active:hover {   
     text-shadow:none;
 }
-/* @media screen and (max-width: 950px) {
+@media screen and (max-width: 650px) {
     .content-container{
         height: 280px;
     }
 }
 @media screen and (max-width: 500px) {
+    
     .content-container{
-        height: 400px;
+        height: 350px;
+        padding: 8% 10% 8% 8% ;
+        
     }
-} */
+} 
+@media screen and (max-width: 370px) {
+    .about_container{
+        margin-left: 8%;
+        text-align: center;
+    }
+    .about_container h1{
+        font-size: 2.7cap;
+        margin-top: 10%;
+        
+    }
+    .maintitle{
+        font-size: 3cap;
+        margin-top: 9%;
+        margin-bottom: 5%;
+    } 
+    
+}
