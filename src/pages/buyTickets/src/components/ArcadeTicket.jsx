@@ -49,13 +49,13 @@ const ArcadeTicket = ({ type, date, time, onBook, className = "" }) => {
 
           <div className="footer">
             <div className="ticket-number">
-              <Ticket className="icon-large" />
-              <div className="number">
+              {/* <Ticket className="icon-large" /> */}
+              {/* <div className="number">
                 №{Math.floor(Math.random() * 9000 + 1000)}
-              </div>
+              </div> */}
             </div>
             <button className="book-button" onClick={onBook}>
-              Book Now
+              SOON!
             </button>
           </div>
         </div>
