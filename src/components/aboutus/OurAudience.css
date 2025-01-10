@@ -8,7 +8,7 @@ body{
 .Title{
     color: rgb(255, 0, 0);
     text-align: center;
-    font-weight: 400;
+    font-weight: 250;
     font-size: 4cap;
     margin-bottom: 1%;
 }
@@ -16,6 +16,7 @@ body{
     text-align: center;
     margin-inline: 30%;
     scale: 1.1;
+    margin-top: 2%;
 }
 .icons{
     display: grid;
@@ -50,10 +51,17 @@ body{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }   
+    .info{
+        margin-top: 5%;
+        margin-inline: 20%;
+    }
 }
 @media screen and (max-width: 430px) {
     .icons{
         display: grid;
         grid-template-columns: 1fr;
-    }   
+    } 
+    .info{
+        margin-top: 8%;
+    }  
 }
