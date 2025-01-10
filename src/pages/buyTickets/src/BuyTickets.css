@@ -21,16 +21,75 @@
 }
 
 .hero-title {
-  font-size: 300%;
-  font-weight: 100;
-  color: #ff0000bd;
+  font-size: 400%;
+  font-weight: 500;
+  color: white;
 }
-
+@media(max-width:839px){.hero-title{margin-bottom:-13%;}}
+@media(max-width:743px){.hero-title{margin-bottom:-17%;}}
+@media(max-width:658px){.hero-title{margin-bottom:-19%;}}
+@media(max-width:561px){.hero-title{margin-bottom:-22%;}}
+@media(max-width:480px){.hero-title{margin-bottom: -25%;}}
+@media(max-width:400px){.hero-title{margin-bottom:-43%;}}
+@media(max-width:563px){.hero-title{font-size:350%;}}
+@media(max-width:490px){.hero-title{font-size:300%;}}
+@media(max-width:428px){.hero-title{font-size:260%;}}
+@media(max-width:375px){.hero-title{font-size:240%;}}
+@media(max-width:349px){.hero-title{font-size:220%;}}
+@media(max-width:323px){.hero-title{font-size:200%;}}
 .hero-description {
   color: #a0aec0;
   max-width: 600px;
+  font-size:1.25rem;
   margin: 0 auto;
 }
+@media(max-width:840px){.hero-description{
+margin-top:15%;}}
+@media(max-width:770px){.hero-description{
+  margin-top:16%;}}
+@media(max-width:742px){.hero-description{
+    margin-top:18%;}}
+@media(max-width:663px){.hero-description{
+      margin-top:21%;}}
+@media(max-width:565px){.hero-description{
+        margin-top:23%;}}
+@media(max-width:485px){.hero-description{
+          margin-bottom:-26%;
+        margin-top:37%;}}
+@media(max-width:476px){.hero-description{
+          margin-bottom:-24%;
+        margin-top:38%}}
+@media(max-width:478px){.hero-description{
+          margin-bottom:-24%;
+        margin-top:39%;}}
+@media(max-width:416px){.hero-description{
+          margin-bottom:-29%;
+        margin-top:39%;
+        font-size:110%}}
+@media(max-width:400px){.hero-description{
+          margin-bottom: -40%;
+        margin-top:46%;}}
+@media(max-width:376px){.hero-description{
+  margin-bottom:-46%;
+  margin-top:46%;
+  font-size:105%;}}
+@media(max-width:349px){.hero-description{
+            font-size:98%}}
+@media(max-width:424px){.hero-description{
+              font-size:105%}}
+@media(max-width:349px){.hero-description{
+                font-size:96%}}
+@media(max-width:349px){.hero-description{
+              font-size:90%}}
+@media(max-width:494px){.hero-description{
+                margin-bottom: -31%;
+              margin-top:25%}}
+@media(max-width:503px){.hero-description{
+                margin-bottom: -20%;
+              margin-top:25%}}
+@media(max-width:400px){.hero-description{
+                margin-bottom: -45%;
+              margin-top:45%}}
 
 .content-grid {
   display: grid;

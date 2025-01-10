@@ -12,16 +12,12 @@ export default function ExclusiveBenefits() {
     "Faster Registration process",
     "Networking with other attendees",
     "Access to Special Programming and Additional events",
-    "Q & A opportunities with speakers",
-    "Quick access to main stage seats from priority gates"
+    
   ];
 
-  const extraBenefits = [
-    "Exclusive TEDx merchandise",
-    "Priority access to future TEDx events",
-    "Special workshop participation",
-    "Digital access to recorded sessions",
-    "VIP lounge access during breaks"
+  const extraBenefits = ["Q & A opportunities with speakers",
+    "Quick access to main stage seats from priority gates",
+    "& more benefits "
   ];
 
   return (
@@ -79,6 +75,9 @@ export default function ExclusiveBenefits() {
             <li className={styles.benefit_item.highlight}>
               <span className={styles.bullet_point}>*</span>
               This conference is not open for children below 8 years
+            </li>
+            <li className={styles.benefit_item.highlight}>
+              & benefits of general pass
             </li>
           </ul>
         </div>
