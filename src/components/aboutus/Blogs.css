@@ -2,7 +2,7 @@
 body{
   color: rgba(255, 255, 255, 0.92);
   background-color: #000000;  
-  font-family: 'Nunito';
+  /* font-family: 'Nunito'; */
 }
 .ubuntu-light {
   font-family: "Ubuntu", serif;
@@ -12,7 +12,7 @@ body{
 .maintitle{
     color: rgb(255, 0, 0);
     text-align: center;
-    font-weight: 400;
+    font-weight: 250;
     font-size: 4cap; 
     margin-top: 4%;
     margin-bottom: 2%;
