@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import './ContactUs.css';
+import styles from './ContactUs.module.css'
 import '../../components/sidebar/Sidebar';
 import '../../components/newsletter/NewsLetter'
 import ScrollButton from '../../components/scroll/ScrollButton';
-// import backpic from './image/img1.jpg' 
-
 
 const ContactUs = () => {
-  
-  useEffect(()=>{
-    window.scrollTo(0, 0);
-      },[])
+  const [successMsg, setSuccessMsg] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);  
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const [formData, setFormData] = useState({
     first_name: '',
@@ -31,45 +31,48 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const url =
-      "https://script.google.com/macros/s/AKfycbwi3Fj33QEnEY9TSkLjE_9-PoBAPO6NIkq4jWEyNzbpv66M3nOt0UxhTQU3wiAyxW-U-g/exec";
+    setIsSubmitting(true);  
+
+    const url = "https://script.google.com/macros/s/AKfycbwi3Fj33QEnEY9TSkLjE_9-PoBAPO6NIkq4jWEyNzbpv66M3nOt0UxhTQU3wiAyxW-U-g/exec";
 
     fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then((res) => res.text())
-      .then((data) => {
-        alert(data);
-        setFormData({
-          first_name: '',
-          last_name: '',
-          email: '',
-          contact_number: '',
-          comments: '',
-          newsletter: false,
-        });
-      })
-      .catch((error) => console.error('Error:', error));
+    .then((res) => res.text())
+    .then(() => {
+      setFormData({
+        first_name: '',
+        last_name: '',
+        email: '',
+        contact_number: '',
+        comments: '',
+        newsletter: false,
+      });
+      setSuccessMsg(true);
+      setTimeout(() => {
+        setSuccessMsg(false);
+      }, 2500);
+    })
+    .catch((error) => console.error('Error:', error))
+    .finally(() => setIsSubmitting(false)); 
   };
 
   return (
-    <div className="main">
-      <div className="blog-section">
+    <div className={styles.main}>
+      <div className={styles.background_image}></div>
+      <div className={styles.blog_section}>
         <h1>Leave Us a Message!!</h1>
         <p>
           If you would like to subscribe to our Newsletter, have a question
-          about an upcoming event, would like to explore a partnership with TEDx IIT Guwahati, or want to send us a comment or suggestion, simply fill out the form below and we’ll get back to you shortly.
+          about an upcoming event, would like to explore a partnership with TEDxIITGuwahati, or want to send us a comment or suggestion, simply fill out the form below and we’ll get back to you shortly.
         </p>
       </div>
-
-      <div className="form-wrapper">
-        <div className="outer-box"></div>
-
-        <div className="form-container">
+      <div className={styles.form_wrapper}>
+        <div className={styles.form_container}>
           <form onSubmit={handleSubmit}>
-            <div className="row">
+            <div className={styles.row}>
               <input
                 type="text"
                 name="first_name"
@@ -86,8 +89,7 @@ const ContactUs = () => {
                 onChange={handleChange}
               />
             </div>
-
-            <div className="row">
+            <div className={styles.row}>
               <input
                 type="email"
                 name="email"
@@ -105,15 +107,13 @@ const ContactUs = () => {
                 required
               />
             </div>
-
             <textarea
               name="comments"
               placeholder="Comments"
               value={formData.comments}
               onChange={handleChange}
             ></textarea>
-
-            <div className="checkbox-container">
+            <div className={styles.checkbox_container}>
               <input
                 type="checkbox"
                 id="newsletter"
@@ -122,13 +122,15 @@ const ContactUs = () => {
                 onChange={handleChange}
               />
               <label htmlFor="newsletter">
-                Sign me up for the TEDx IIT Guwahati newsletter
+                Sign me up for the TEDxIITGuwahati newsletter
               </label>
             </div>
-
-            <div className="button-container">
-              <button type="submit">Submit</button>
+            <div className={styles.button_container}>
+              <button type="submit" disabled={isSubmitting}>
+                {isSubmitting ? 'Submitting...' : 'Submit'}
+              </button>
             </div>
+            {successMsg && <p className={styles.successMsg}>Thank you for your response</p>}
           </form>
         </div>
       </div>
