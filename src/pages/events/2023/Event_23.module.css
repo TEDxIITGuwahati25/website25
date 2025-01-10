@@ -38,11 +38,14 @@ header div img {
     font-size: 2.2em;
     font-weight: 700;
     color: #e62b1e;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #theme h1:nth-child(2) {
     font-size: 3.3em;
     font-weight: 900;
+    margin-top: 0;
 }
 
 header h2 {
@@ -124,22 +127,12 @@ header h2 {
     width: 100%;
 }
 
-.data {
-    width: 80%;
-    margin-inline: 10%;
-}
-
 .speaker:hover h3 {
     color: #cdcdcd;
-    background-color: #e62b1e;
     text-align: center;
-    width: 60%;
-    margin-inline: 20%;
     font-weight: 500;
     border-radius: 20px;
-}
-.speaker:hover {
-    scale: 1.01;
+    background: linear-gradient(to right, black 22%, #e62b1e 50%, black 78%);
 }
 
 #team {
