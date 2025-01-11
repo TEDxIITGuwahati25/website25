@@ -15,9 +15,9 @@ const Title = () => {
             return () => window.removeEventListener('scroll', handleScroll);
         }, []);
 
-        const calculateOpacityAndScale = () => {
-            const start = 200; // Start showing image
-            const end = 500; // Fully visible by this point
+        const calculateOpacityAndScale = (a,b) => {
+            const start = a; // Start showing image
+            const end = b; // Fully visible by this point
             const progress = Math.min(Math.max((offset - start) / (end - start), 0), 1); // Clamped between 0 and 1
     
             return {
@@ -45,11 +45,11 @@ const Title = () => {
             </span>
             </div>
    
-            <div className={styles.heading} style={calculateOpacityAndScale()}><img src="./images/WhiteTextLogo.png"></img></div>
+            {/* <div className={styles.heading} style={calculateOpacityAndScale(100,400)}><img src="./images/WhiteTextLogo.png"></img></div> */}
 
 
             {/* <div className={styles.heading} style={calculateOpacityAndScale()}><h1>Welcome to TEDxIITGuwahati</h1></div> */}
-            <div className={styles.container} style={calculateOpacityAndScale()}>
+            <div className={styles.container} style={calculateOpacityAndScale(250,450)}>
                 <div className={styles.gif}>
                     <img src="/images/Tedx-logo-animation.gif"></img>
                 </div>
