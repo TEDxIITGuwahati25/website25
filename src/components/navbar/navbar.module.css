@@ -121,11 +121,11 @@
 }
 
 .navtop img{
-    width: 250px;
+    width: 200px;
     display: block;
     position: fixed;
-    top: 0px;
-    right: 10px;
+    top: 3px;
+    right: 15px;
 
    
 }
@@ -136,9 +136,10 @@
 }
 .menubutton{
     position: fixed;
+    margin-left: 3%;
     top: 10px;
     left: 10px;
-    scale: 2;
+    scale: 1.5;
     cursor: pointer;
     z-index: 2000;
 }
