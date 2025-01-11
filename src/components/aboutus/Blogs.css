@@ -21,6 +21,8 @@ body{
   color: whitesmoke;
   font-size: 17px;
   margin-inline: 2%;
+  margin-top: 5%;
+  margin-bottom: 3%;
 }
 .p1{
   width: 100%;
@@ -45,6 +47,7 @@ body{
   color: rgb(128, 128, 128);
   margin-inline: 2%;
   font-size: 15px;
+  margin-top: 2%;
 }
 .blog:hover{
   
@@ -58,10 +61,18 @@ body{
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
+    .blogInfo{
+      font-size: 13px;
+    }
 }
 @media screen and (max-width: 450px){
   .blogs{
     display: grid;
     grid-template-columns: 1fr;
   }
+  .maintitle{
+    font-size: 3.5cap;
+    margin-top: 9%;
+    margin-bottom: 5%;
+  } 
 }

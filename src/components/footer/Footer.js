@@ -20,7 +20,7 @@ const Footer = () => {
               </text>
             </svg>*/}
             <a href="Home">
-            <img src="/images/WhiteTextLogo.png" alt="TEDx IIT Guwahati" className="footer-logo" />
+            <img src="./images/WhiteTextLogo.png" alt="TEDx IIT Guwahati" className="footer-logo" />
             </a>
            
 

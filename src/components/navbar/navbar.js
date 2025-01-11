@@ -4,11 +4,11 @@ import Navbarmobile from "./navbarmobile";
 import styles from "./navbar.module.css";
 
 const Navbar = () => {
-    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 970);
+    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 993);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 970);
+      setIsSmallScreen(window.innerWidth <= 993);
     };
 
     window.addEventListener('resize', handleResize);

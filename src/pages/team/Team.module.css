@@ -568,7 +568,7 @@
         content: "";
         width: 19rem;
         height: 9.5rem;
-        background-color: rgb(158, 15, 15); /* Darker red for the top of the circle */
+        background-color: rgb(158, 15, 15); 
         position: absolute;
         top: -1rem;
         left: -1rem;
@@ -613,7 +613,7 @@
         gap: 1.5rem;
         margin-left: 0.5rem;
         flex-wrap: wrap;
-        justify-content: center; /* Ensures that the child items are centered */
+        justify-content: center; 
     }
 
     .Teamiddesktop {
@@ -654,8 +654,8 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        background-color: #000000; /* Set background to white */
-        box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1); /* Optional shadow for contrast */
+        background-color: #000000; 
+        box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1); 
         margin-left: 26%;
     }
 
@@ -679,7 +679,7 @@
     .imgTitleName p {
         font-size: 1.2rem;
         font-weight: 500;
-        color: black; /* Adjust text color to black */
+        color: black;
         text-align: center;
         margin: 0;
     }
@@ -687,7 +687,7 @@
     .imgTitlePost p {
         font-weight: 300;
         font-size: 1rem;
-        color: rgba(0, 0, 0, 0.8); /* Adjust text color for the position */
+        color: rgba(0, 0, 0, 0.8); 
         text-align: center;
         margin: 0;
     }

@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ArcadeTicket from './components/ArcadeTicket';
 import ExclusiveBenefits from './components/ExclusiveBenefits';
 import './BuyTickets.css';
 
 
 function BuyTickets() {
+  useEffect(()=>{
+      window.scrollTo(0, 0);
+        },[])
+  
   const handleBook = () => {
     alert('Booking functionality will be implemented here!');
   };
@@ -15,10 +19,10 @@ function BuyTickets() {
       
       <main className="main-content">
         <div className="hero">
-          <h1 className="hero-title">Buy Tickets</h1>
-          {/* <p className="hero-description">
-            Buy Tickets
-          </p> */}
+          <h1 className="hero-title">Reserve Your Seat!</h1>
+          <p className="hero-description">
+          Make It Yours – Book Your Experience
+          </p> 
         </div>
 
         <div className="content-grid">
