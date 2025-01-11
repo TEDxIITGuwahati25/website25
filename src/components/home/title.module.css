@@ -1,5 +1,5 @@
 .title{
-    height: 205vh;
+    height: 180vh;
 }
 .parallax_container{
     position: relative; 
@@ -54,7 +54,7 @@
     display: block;
 }
 .container img{
-    margin-top: 12%;
+    margin-top: 3%;
     width: 45vw;
 }
 .container .content{
@@ -62,6 +62,7 @@
 }
 .content h2{
     font-size: 3em;
+    margin-bottom: 5%;
 }
 
 @media (max-width: 750px){
@@ -75,7 +76,7 @@
         font-size: 3em;
     }
     .title{
-        height: 280vh;
+        height: 230vh;
     }
     .seaside img,
 .citadel img {
@@ -105,7 +106,7 @@
         font-size: 3em;
     }
     .title{
-        height: 290vh;
+        height: 260vh;
     }
     .seaside img,
 .citadel img {
@@ -122,16 +123,16 @@
 .citadel img{
     margin-left: 32%;
 }
-.heading img{
+/* .heading img{
     width: 70%;
-}
+} */
 }
 @media (min-width:1000px){
     .container{
         display: flex;
     }
-    .heading{
+    /* .heading{
         transform: translateY(60px);
-    }
+    } */
 }
 

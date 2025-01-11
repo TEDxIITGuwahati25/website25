@@ -392,8 +392,11 @@
         font-size: 1rem;
         transform: translateX(5%);
     }
-    .Teamdesktop h1,.Teamdesktop h4,.Teamdesktop h4+p{
+    .Teamdesktop h1,.Teamdesktop h4{
         transform: translate(6%);
+    }
+    .Teamdesktop h4+p{
+        transform: translate(6.5%);
     }
 }
 @media (min-width: 971px) and (max-width: 1100px) {
@@ -475,8 +478,11 @@
         font-size: 1rem;
         transform: translateX(5%);
     }
-    .Teamdesktop h1,.Teamdesktop h4,.Teamdesktop h4+p{
+    .Teamdesktop h1,.Teamdesktop h4{
         transform: translate(6%);
+    }
+    .Teamdesktop h4+p{
+        transform: translate(6.5%);
     }
 }
 @media (min-width: 1100px) {
@@ -535,7 +541,7 @@
         width: 18rem;
         height: 18rem;
         border-radius: 50%;
-        background-color: rgb(175, 46, 46); 
+        background-color: rgb(175, 46, 46); /* Red circle */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -592,8 +598,11 @@
         transform: translateX(0);
     }
     
-    .Teamdesktop h1, .Teamdesktop h4, .Teamdesktop h4 + p {
+    .Teamdesktop h1, .Teamdesktop h4 {
         transform: translate(6%);
+    }
+    .Teamdesktop h4 + p {
+        transform: translate(6.5%);
     }
 }
 @media (min-width: 481px) and (max-width: 770px) {
@@ -702,8 +711,11 @@
 }
 
     .Teamdesktop h1,
-    .Teamdesktop h4,
-    .Teamdesktop h4 + p {
+    .Teamdesktop h4
+    {
         transform: translate(6%);
+    }
+    .Teamdesktop h4 + p{
+        transform: translate(6.4%);
     }
 }
