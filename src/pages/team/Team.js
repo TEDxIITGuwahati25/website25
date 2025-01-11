@@ -2,6 +2,7 @@ import Teamdesktop from "./Teamdesktop";
 import Teammobile from "./Teammobile";
 import {useState, useEffect} from "react";
 import styles from "./Team.module.css";
+import ScrollButton from '../../components/scroll/ScrollButton';
 
 const Team = () => {
 
@@ -24,9 +25,12 @@ const Team = () => {
   }, []);
 
   return (
-    <div className={styles.Team}>
+    <>
+      <div className={styles.Team}>
       {isSmallScreen ? <Teammobile /> : <Teamdesktop />}
     </div>
+    <ScrollButton/>
+    </>
   );
 }
  

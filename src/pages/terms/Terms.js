@@ -10,6 +10,7 @@
 import React from "react";
 import { useEffect } from 'react';
 import styles from"./Terms.module.css"; // Optional: External CSS for styling
+import ScrollButton from '../../components/scroll/ScrollButton';
 
 const Terms = () => {
 
@@ -18,7 +19,8 @@ const Terms = () => {
       },[])
 
   return (
-    <div className={styles.container}>
+    <>
+      <div className={styles.container}>
       <h1>Terms and Conditions</h1>
       <p className={styles.updated_date}>Date Updated: 14 December, 2024</p>
 
@@ -364,6 +366,8 @@ const Terms = () => {
         <p style={{ margin: 0 }}>© 2024 TEDxIITGuwahati. All rights reserved.</p>
       </div> */}
     </div>
+    <ScrollButton/>
+    </>
   );
 };
 

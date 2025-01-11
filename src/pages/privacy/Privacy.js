@@ -10,6 +10,7 @@
 import React from "react";
 import { useEffect } from 'react';
 import styles from "./Privacy.module.css"; // Make sure to save your CSS in this file
+import ScrollButton from '../../components/scroll/ScrollButton';
 
 const Privacy = () => {
 
@@ -18,7 +19,8 @@ const Privacy = () => {
       },[])
 
   return (
-    <div className={styles.priv_container}>
+    <>
+      <div className={styles.priv_container}>
       <h1>Privacy Policy</h1>
       <p className="updated-date">Date updated: 11 January, 2024</p>
 
@@ -132,6 +134,8 @@ const Privacy = () => {
         </p>
       </section>
     </div>
+    <ScrollButton/>
+    </>
   );
 };
 
