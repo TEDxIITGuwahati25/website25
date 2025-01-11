@@ -199,6 +199,7 @@ h4.footer-heading {
 
     .footer-row2 .footer-copyright {
         padding: 0rem;
+        margin-top: 3%;
     }
 
     .footer-col3 h4 {
@@ -217,6 +218,7 @@ h4.footer-heading {
         top: -2rem;
         left: -1rem;
     }
+    
 }
 @media (min-width:769px) and (max-width:1290px){
     .footer-col1{
@@ -258,5 +260,5 @@ h4.footer-heading {
     .row2 h4{
         margin-left: 0rem;
     }
-       
+    
 }
