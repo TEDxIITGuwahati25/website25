@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ArcadeTicket from './components/ArcadeTicket';
 import ExclusiveBenefits from './components/ExclusiveBenefits';
+import Location from '../../../components/location/location';
 import './BuyTickets.css';
 
 
@@ -49,6 +50,7 @@ function BuyTickets() {
           </div>
         </div>
       </main>
+      <Location/>
     </div>
   );
 }
