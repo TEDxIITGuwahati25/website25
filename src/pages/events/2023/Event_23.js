@@ -27,8 +27,8 @@ import pavan from "./team23/pavan.jpg"
 const Event_23 = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState(null);
 
-  const openModal = ({name, about, description, image}) => {
-    setSelectedSpeaker({name, about, description,image});
+  const openModal = ({name, about, description, image,youtubeLink}) => {
+    setSelectedSpeaker({name, about, description,image, youtubeLink});
   };
 
   const closeModal = () => {
@@ -78,12 +78,12 @@ const Event_23 = () => {
           <div id={styles.speakers}>
             <h2>Speakers</h2>
             <div id={styles.speakerContainer}>
-            <Card func={() => openModal({ name: 'Plabita Borthakur', about: 'Artist', description: `${Data.Plabita}`, image: `${Platiba}` })} name='Plabita Borthakur' id='#Platiba' image={Platiba} />
-            <Card func={() => openModal({name: 'Seema Lokhandwala',about: 'Elephant biologist',description: `${Data.Seema}`,image: `${Seema}`})} name='Seema Lokhandwala' id='#Seema' image={Seema} />
-            <Card func={() => openModal({name: 'Neil D Silva',about: 'Author',description: `${Data.Neil}`,image: `${Neil}`})} name='Neil D Silva' id='#Neil' image={Neil} />
-            <Card func={() => openModal({name: 'Neeraj Kumar Sharma',about: 'IITG Professor',description: `${Data.Neeraj}`,image: `${Neeraj}`})} name='Neeraj Kumar Sharma' id='#Neeraj' image={Neeraj} />
-            <Card func={() => openModal({name: 'Kamal Jeswani',about: 'Financial Coach',description: `${Data.Kamal}`,image: `${Kamal}`})} name='Kamal Jeswani' id='#Kamal' image={Kamal} />
-            <Card func={() => openModal({name: 'Divanshu Kumar',about: 'Co-founder & CEO',description: `${Data.Divanshu}`,image: `${Divanshu}`})} name='Divanshu Kumar' id='#Divanshu' image={Divanshu} />
+            <Card func={() => openModal({ name: 'Plabita Borthakur', about: 'Artist', description: `${Data.Plabita}`, image: `${Platiba}`,youtubeLink:'uLkOz9RabY0' })} name='Plabita Borthakur' id='#Platiba' image={Platiba} />
+            <Card func={() => openModal({name: 'Seema Lokhandwala',about: 'Elephant biologist',description: `${Data.Seema}`,image: `${Seema}`,youtubeLink:'FK-9qrkM42s'})} name='Seema Lokhandwala' id='#Seema' image={Seema} />
+            <Card func={() => openModal({name: 'Neil D Silva',about: 'Author',description: `${Data.Neil}`,image: `${Neil}`,youtubeLink:''})} name='Neil D Silva' id='#Neil' image={Neil} />
+            <Card func={() => openModal({name: 'Neeraj Kumar Sharma',about: 'IITG Professor',description: `${Data.Neeraj}`,image: `${Neeraj}`,youtubeLink:'CYMMLLeGrVs'})} name='Neeraj Kumar Sharma' id='#Neeraj' image={Neeraj} />
+            <Card func={() => openModal({name: 'Kamal Jeswani',about: 'Financial Coach',description: `${Data.Kamal}`,image: `${Kamal}`,youtubeLink:'wW9ir7xaQSk'})} name='Kamal Jeswani' id='#Kamal' image={Kamal} />
+            <Card func={() => openModal({name: 'Divanshu Kumar',about: 'Co-founder & CEO',description: `${Data.Divanshu}`,image: `${Divanshu}`,youtubeLink:'qmeAIMwXvKw'})} name='Divanshu Kumar' id='#Divanshu' image={Divanshu} />
 
             </div>
           </div>
@@ -113,6 +113,7 @@ const Event_23 = () => {
             image={selectedSpeaker.image}
             description = {selectedSpeaker.description}
             func={closeModal}
+            youtubeLink={selectedSpeaker.youtubeLink}
           />
         )}
         {selectedSpeaker && <div onClick={closeModal} id={styles.overlay}></div>}

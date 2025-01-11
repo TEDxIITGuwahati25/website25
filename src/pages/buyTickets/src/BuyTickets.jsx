@@ -11,7 +11,7 @@ function BuyTickets() {
         },[])
   
   const handleBook = () => {
-    alert('Booking functionality will be implemented here!');
+    // alert('Booking functionality will be implemented here!');
   };
 
   return (
