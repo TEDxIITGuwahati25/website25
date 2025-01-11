@@ -14,7 +14,7 @@
     margin: 0px;
 }
 .location h1{
-    font-size: 2.7em;
+    font-size: 191%;
     color: red;
     padding: 2% 0 2% 0;
     font-weight: 300;
@@ -24,6 +24,7 @@
     font-weight: 100px;
     color: rgba(255, 255, 255, 0.92);
     font-size: 1.1em;
+    line-height: 150%;
 }
 .location button{
     border: 5px solid transparent;
