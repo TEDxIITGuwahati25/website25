@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import {Link} from 'react-router-dom'
 import styles from './Event_19.module.css';
 const Modal = ({name, about, description, image, func, youtubeLink}) => {
   useEffect(()=>{
@@ -27,18 +28,17 @@ const Modal = ({name, about, description, image, func, youtubeLink}) => {
               {description}
             </p>
           </div>
-          <div className={styles.watchTalk}>
-          {youtubeLink && (
-                        <a
-                        href={`https://www.youtube.com/watch?v=${youtubeLink}`} // External link to YouTube
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.watchTalkLink}
-                      >
-                        Watch Talk
-                      </a>
-          )}
-          </div>
+                    <div className={youtubeLink ? styles.watchTalk:styles.hideLink}>
+                    {youtubeLink && (
+                                  <a
+                                  href={`https://www.youtube.com/watch?v=${youtubeLink}`} // External link to YouTube
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  Watch Talk
+                                </a>
+                    )}
+                    </div>
         </div>
       </div>
       )

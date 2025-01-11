@@ -66,11 +66,11 @@ TEDxIITGuwahati is thrilled to invite you all to be a part of its modest step to
             <h2>Speakers</h2>
             <div id={styles.speakerContainer}>
             <Card func={() => openModal({ name: 'Alana Golmei', about: 'Lawyer, Humanitarian', description: `${Data.Alana}`, image: `${Alana}`,youtubeLink:'' })} name='Alana Golmei' id='#Alana' image={Alana} />
-            <Card func={() => openModal({name: 'Anamika Barua',about: 'Professor of Economics',description: `${Data.Anamika}`,image: `${Anamika}`,youtubeLink:'zUgmAG5umdcs'})} name='Anamika Barua' id='#Anamika' image={Anamika} />
+            <Card func={() => openModal({name: 'Anamika Barua',about: 'Professor of Economics',description: `${Data.Anamika}`,image: `${Anamika}`, youtubeLink:'zUgmAG5umdc'})} name='Anamika Barua' id='#Anamika' image={Anamika} />
             <Card func={() => openModal({name: 'Arup Kumar Dutta',about: 'Journalist, Conservationalist',description: `${Data.Arup}`,image: `${Arup}`,youtubeLink:''})} name='Arup Kumar Dutta' id='#Arup' image={Arup} />
-            <Card func={() => openModal({name: 'Binita Jain',about: 'Teacher',description: `${Data.Binita}`,image: `${Binita}`,youtubeLink:'BHKIuaaXcQl'})} name='Binita Jain' id='#Binita' image={Binita} />
-            <Card func={() => openModal({name: 'Milin Dutta',about: 'Trans-activist',description: `${Data.Milin}`,image: `${Milin}`,youtubeLink:''})} name='Milin Dutta' id='#Milin' image={Milin} />
-            <Card func={() => openModal({name: 'Pragnya Ramjee',about: 'Student',description: `${Data.Pragnya}`,image: `${Pragnya}`,youtubeLink:''})} name='Pragnya Ramjee' id='#Pragnya' image={Pragnya} />
+            <Card func={() => openModal({name: 'Binita Jain',about: 'Teacher',description: `${Data.Binita}`,image: `${Binita}`,youtubeLink:'BHKIuaaXcQI'})} name='Binita Jain' id='#Binita' image={Binita} />
+            <Card func={() => openModal({name: 'Milin Dutta',about: 'Trans-activist',description: `${Data.Milin}`,image: `${Milin}`,youtubeLink:'Q-cPyKMkCXc'})} name='Milin Dutta' id='#Milin' image={Milin} />
+            <Card func={() => openModal({name: 'Pragnya Ramjee',about: 'Student',description: `${Data.Pragnya}`,image: `${Pragnya}`,youtubeLink:'9zcqXh8oMn4'})} name='Pragnya Ramjee' id='#Pragnya' image={Pragnya} />
             <Card func={() => openModal({name: 'Zoma Sailo',about: 'Mentor and Part of Light After Dark',description: `${Data.Zoma}`,image: `${Zoma}`,youtubeLink:''})} name='Zoma Sailo' id='#Zoma' image={Zoma} />
 
             </div>
@@ -98,6 +98,7 @@ TEDxIITGuwahati is thrilled to invite you all to be a part of its modest step to
             image={selectedSpeaker.image}
             description = {selectedSpeaker.description}
             func={closeModal}
+            youtubeLink = {selectedSpeaker.youtubeLink}
           />
         )}
         {selectedSpeaker && <div onClick={closeModal} id={styles.overlay}></div>}
