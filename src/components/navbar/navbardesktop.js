@@ -1,6 +1,5 @@
 import {NavLink} from "react-router-dom";
 import styles from "./navbar.module.css";
-import StarBorder from "./StarBorder";
 import { useState } from "react";
 const Navbardesktop = () => {
     const showActivePage = (isActive,color)=>{return {color: isActive?color:''}}
@@ -15,18 +14,8 @@ const Navbardesktop = () => {
                     
                     <div className={styles.div6}><NavLink to="/ContactUs" style={({isActive})=>showActivePage(isActive,'red')}>Contact Us</NavLink></div>
                     <div className={styles.div7}><a href="https://www.instagram.com/tedxiitguwahati/"><img src="images/Instalogo.png"></img></a></div>
-                    <div className={styles.div5}>
-                    <NavLink to="/buyTickets">
-                        <StarBorder
-                        as="button"
-                        className={`${styles.booknow} custom-class`}
-                        color="cyan"
-                        speed="5s"
-                        >
-                        Book Now
-                        </StarBorder>
-                    </NavLink>
-                    </div>
+                    <div className={styles.div5}><NavLink to="/buyTickets">
+                    <div className={styles.booknow}>Book Now</div></NavLink></div>
 
 
 
