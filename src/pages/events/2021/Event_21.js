@@ -36,8 +36,8 @@ import Vishwa from "./team21/VishwaprasannaH.jpg"
 const Event_21 = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState(null);
 
-  const openModal = ({name, about, description, image}) => {
-    setSelectedSpeaker({name, about, description,image});
+  const openModal = ({name, about, description, image, youtubeLink}) => {
+    setSelectedSpeaker({name, about, description,image, youtubeLink});
   };
 
   const closeModal = () => {
@@ -74,15 +74,15 @@ const Event_21 = () => {
           <div id={styles.speakers}>
             <h2>Speakers</h2>
             <div id={styles.speakerContainer}>
-            <Card func={() => openModal({ name: 'Aashish Chandratreya', about: 'Photographer & Videographer', description: `${Data.Aashish}`, image: `${Aashish}` })} name='Aashish Chandratreya' id='#Aashish' image={Aashish} />
-            <Card func={() => openModal({name: 'Aditya Gupta',about: 'Entrepreneur And Adventure Traveller',description: `${Data.Aditya}`,image: `${Aditya}`})} name='Aditya Gupta' id='#Aditya' image={Aditya} />
-            <Card func={() => openModal({name: 'Bhagvan Kommadi',about: 'Professor of Linguistics',description: `${Data.Bhagvan}`,image: `${Bhagvan}`})} name='Bhagvan Kommadi' id='#Bhagvan' image={Bhagvan} />
-            <Card func={() => openModal({name: 'Nisha Bora',about: 'Social researcher and entrepreneur',description: `${Data.Nisha}`,image: `${Nisha}`})} name='Nisha Bora' id='#Nisha' image={Nisha} />
-            <Card func={() => openModal({name: 'Prabhagaran Rakkiappan',about: 'Product Manager & UX Designer',description: `${Data.Prabhagaran}`,image: `${Prabhagaran}`})} name='Prabhagaran Rakkiappan' id='#Prabhagaran' image={Prabhagaran} />
-            <Card func={() => openModal({name: 'Bidisha Som',about: 'Professor of Linguistics',description: `${Data.Bidisha}`,image: `${Bidisha}`})} name='Bidisha Som' id='#Bidisha' image={Bidisha} />
-            <Card func={() => openModal({name: 'Seema Gupta',about: 'Professor of Digital Marketing',description: `${Data.Seema}`,image: `${Seema}`})} name='Seema Gupta' id='#Seema' image={Seema} />
-            <Card func={() => openModal({name: 'Rudy Wallang',about: 'Blues Musician',description: `${Data.Rudy}`,image: `${Rudy}`})} name='Rudy Wallang' id='#Rudy' image={Rudy} />
-            <Card func={() => openModal({name: 'Shiva Sah',about: 'Student, Architect',description: `${Data.Shiva}`,image: `${Shiva}`})} name='Shiva Sah' id='#Shiva' image={Shiva} />
+            <Card func={() => openModal({ name: 'Aashish Chandratreya', about: 'Photographer & Videographer', description: `${Data.Aashish}`, image: `${Aashish}`, youtubeLink:'4D9poUkjm5w' })} name='Aashish Chandratreya' id='#Aashish' image={Aashish} />
+            <Card func={() => openModal({name: 'Aditya Gupta',about: 'Entrepreneur And Adventure Traveller',description: `${Data.Aditya}`,image: `${Aditya}`, youtubeLink:''})} name='Aditya Gupta' id='#Aditya' image={Aditya} />
+            <Card func={() => openModal({name: 'Bhagvan Kommadi',about: 'Professor of Linguistics',description: `${Data.Bhagvan}`,image: `${Bhagvan}`, youtubeLink:'rTo5-NWFBzc'})} name='Bhagvan Kommadi' id='#Bhagvan' image={Bhagvan} />
+            <Card func={() => openModal({name: 'Nisha Bora',about: 'Social researcher and entrepreneur',description: `${Data.Nisha}`,image: `${Nisha}`, youtubeLink:'s5FrKqii280'})} name='Nisha Bora' id='#Nisha' image={Nisha} />
+            <Card func={() => openModal({name: 'Prabhagaran Rakkiappan',about: 'Product Manager & UX Designer',description: `${Data.Prabhagaran}`,image: `${Prabhagaran}`, youtubeLink:''})} name='Prabhagaran Rakkiappan' id='#Prabhagaran' image={Prabhagaran} />
+            <Card func={() => openModal({name: 'Bidisha Som',about: 'Professor of Linguistics',description: `${Data.Bidisha}`,image: `${Bidisha}`, youtubeLink:'TgKj2Pkfh9E'})} name='Bidisha Som' id='#Bidisha' image={Bidisha} />
+            <Card func={() => openModal({name: 'Seema Gupta',about: 'Professor of Digital Marketing',description: `${Data.Seema}`,image: `${Seema}`, youtubeLink:'IR7CUajjtzU'})} name='Seema Gupta' id='#Seema' image={Seema} />
+            <Card func={() => openModal({name: 'Rudy Wallang',about: 'Blues Musician',description: `${Data.Rudy}`,image: `${Rudy}`, youtubeLink:'GQwMjFz132E'})} name='Rudy Wallang' id='#Rudy' image={Rudy} />
+            <Card func={() => openModal({name: 'Shiva Sah',about: 'Student, Architect',description: `${Data.Shiva}`,image: `${Shiva}`, youtubeLink:'KhAKqghwnns'})} name='Shiva Sah' id='#Shiva' image={Shiva} />
 
             </div>
           </div>
@@ -108,6 +108,7 @@ const Event_21 = () => {
             image={selectedSpeaker.image}
             description = {selectedSpeaker.description}
             func={closeModal}
+            youtubeLink={selectedSpeaker.youtubeLink}
           />
         )}
         {selectedSpeaker && <div onClick={closeModal} id={styles.overlay}></div>}

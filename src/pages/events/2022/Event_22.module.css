@@ -554,6 +554,6 @@ header h2{
         font-weight: 400;
         font-size: 4vw;
         line-height: 1.2;
-      }
-
-  }
+      }}
+    .hideLink{display: none;}
+  
