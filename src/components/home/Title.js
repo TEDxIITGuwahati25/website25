@@ -1,18 +1,29 @@
 import styles from './title.module.css';
-import Location from '../location/location.js';
 import React, { useEffect, useState } from 'react';
 
 const Title = () => {
 
     const [offset, setOffset] = useState(0);
+    const [num,setNum]= useState(null);
+    
+   
     // Update offset value on scroll
         useEffect(() => {
             const handleScroll = () => {
                 setOffset(window.scrollY);
             };
+            
+            const handleResize = () => {
+                setNum(window.innerWidth > 600 ? '1' :'');
+              };
+              setNum(window.innerWidth > 600 ? '1' :'');
+            
     
             window.addEventListener('scroll', handleScroll);
-            return () => window.removeEventListener('scroll', handleScroll);
+            window.addEventListener('resize', handleResize);
+            return () => {window.removeEventListener('scroll', handleScroll);
+                window.removeEventListener('resize', handleResize);
+            }
         }, []);
 
         const calculateOpacityAndScale = (a,b) => {
@@ -34,14 +45,17 @@ const Title = () => {
               className={styles.seaside}
               style={{ transform: `translateX(${-(offset) / window.innerWidth * 250}%)` }}
             >
-                <img src="/images/home/Seaside.png" alt="Seaside" />
+                <img src="./images/home/Seaside.png" alt="Seaside" />
             </span>
 
             <span
               className={styles.citadel}
               style={{ transform: `translateX(${(offset) / window.innerWidth * 250}%)` }}
             >
-              <img src="/images/home/Citadel.png" alt="Citadel" />
+            <img src={`./images/home/Citadel${num}.png`} alt="Citadel" />
+
+
+
             </span>
             </div>
    
@@ -55,7 +69,7 @@ const Title = () => {
                 </div>
                 
                 <div className={styles.content}>
-                    <h2>Seaside Citadel</h2>
+                    <h2>Theme 2025</h2>
                     <p>The theme of TEDxIITGuwahati 2025 is Seaside Citadel, which explores the beauty of creation in the face of impermanence. </p><br></br>
                     <p>                    Imagine a majestic citadel rising from the shore, sculpted from grains of sand—its walls are sturdy, its towers high. For a moment, it stands proudly against the horizon, embodying strength and intention. Yet, just as the tides are inevitable, so too is the fate of this sand-built citadel. The waves come, reshaping it into something new, reminding us of the transient nature of all things we build.
                     </p><br></br>
@@ -68,9 +82,6 @@ const Title = () => {
         </div>
 
 
-        <div>
-            {<Location />}
-        </div>
         </>
     );
 }
