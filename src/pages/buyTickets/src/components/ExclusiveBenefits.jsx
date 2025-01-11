@@ -70,13 +70,13 @@ export default function ExclusiveBenefits() {
             </li>
             <li className={styles.benefit_item}>
               <span className={styles.bullet_point}>•</span>
-              Students from the age of 8 to 12 years should be accompanied by an adult attendee
+              Students from the age of 8 to 12 years should be accompanied by an adult attendee. This conference is not open for children below 8 years
             </li>
-            <li className={styles.benefit_item.highlight}>
+            {/* <li className={styles.benefit_item.highlight}>
               <span className={styles.bullet_point}>*</span>
               This conference is not open for children below 8 years
-            </li>
-            <li className={styles.benefit_item.highlight}>
+            </li> */}
+            <li className={styles.benefit_item_highlight}>
               & benefits of general pass
             </li>
           </ul>

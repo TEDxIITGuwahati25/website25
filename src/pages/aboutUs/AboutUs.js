@@ -5,6 +5,8 @@ import AboutTed from '../../components/aboutus/AboutTed';
 import Blogs from '../../components/aboutus/Blogs'
 import Audience from '../../components/aboutus/OurAudience'
 import Sponsors from '../../components/aboutus/sponsors'
+import ScrollButton from '../../components/scroll/ScrollButton';
+
 const AboutUs = () => {
 
   useEffect(()=>{
@@ -16,8 +18,8 @@ const AboutUs = () => {
         <AboutTed/>
         <Blogs/>
         <Audience/>
+        <ScrollButton/>
       </>
-      
     );
 }
   

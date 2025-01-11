@@ -90,6 +90,9 @@
 
 /* Responsive Design: Desktop Layout (768px to 970px) */
 @media (min-width: 768px) and (max-width: 970px) {
+    .h4,.h4+p{
+        font-weight: 100;
+    }
     .Teamdesktopdetails {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
@@ -109,6 +112,9 @@
 
 /* Media Query for screen size between 970px and 1100px */
 @media (min-width: 970px) and (max-width: 1100px) {
+    .h4,.h4+p{
+        font-weight: 100;
+    }
     .Teamdesktopdetails {
         grid-template-columns: repeat(3, 1fr);
         gap: 0.3rem;
@@ -257,6 +263,9 @@
 
 /* Responsive Design: Mobile Layout (< 480px) */
 @media (max-width: 480px) {
+    h4,h4+p{
+        font-weight: 100;
+    }
     .Teammobile h1,
     .Teammobile h4,
     .Teammobile p {
@@ -264,6 +273,7 @@
         transform: translateX(0%);
         margin-left: 0;
         width: 100%;
+        
     }
 
     .Teammobile .Teamidmobile {
@@ -311,9 +321,16 @@
     }
     .Teammobile h1,.Teammobile h4,.Teammobile h4+p{
         margin-left:10% ;
+        font-weight: 100;
+    }
+    .Teammobile h4+p{
+        margin-top: 1%;
     }
 }
 @media (min-width: 771px) and (max-width: 970px) {
+    h4,h4+p{
+        font-weight: 100;
+    }
     .Teamdesktopdetails {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
@@ -334,6 +351,7 @@
     .Teamdesktop h4 {
         font-size: 1.2rem;
         margin-left: 0;
+        font-weight: 100;
     }
 
     .Teamdesktop p {
@@ -386,6 +404,7 @@
     .Teammobile h4 {
         font-size: 1.2rem;
         transform: translateX(5%);
+        
     }
 
     .Teammobile p {
@@ -397,6 +416,7 @@
     }
     .Teamdesktop h4+p{
         transform: translate(6.5%);
+        margin-top: 1%;
     }
 }
 @media (min-width: 971px) and (max-width: 1100px) {
@@ -420,6 +440,7 @@
     .Teamdesktop h4 {
         font-size: 1.2rem;
         margin-left: 0;
+        font-weight:100;
     }
 
     .Teamdesktop p {
@@ -470,7 +491,7 @@
     }
 
     .Teammobile h4 {
-        font-size: 1.2rem;
+        font-weight: 100;
         transform: translateX(5%);
     }
 
@@ -483,6 +504,8 @@
     }
     .Teamdesktop h4+p{
         transform: translate(6.5%);
+        font-weight: 100;
+        margin-top: 1%;
     }
 }
 @media (min-width: 1100px) {
@@ -505,7 +528,7 @@
     }
 
     .Teamdesktop h4 {
-        font-size: 1.5rem;
+        font-weight: 100;
         margin-left: 0;
     }
 
@@ -513,7 +536,10 @@
         font-size: 1.2rem;
         margin-left: 0;
     }
-
+    .Teamdesktop h4+p{
+        font-weight: 100;
+        margin-top: 0.8%;
+    }
     .Teamidmobile {
         width: 40%;
         margin: 1rem;
@@ -591,6 +617,7 @@
     .Teammobile h4 {
         font-size: 1.3rem;
         transform: translateX(0);
+        font-weight: 100;
     }
 
     .Teammobile p {
@@ -603,6 +630,7 @@
     }
     .Teamdesktop h4 + p {
         transform: translate(6.5%);
+        font-weight: 100;
     }
 }
 @media (min-width: 481px) and (max-width: 770px) {
@@ -631,10 +659,13 @@
     .Teamdesktop h4 {
         font-size: 1.3rem;
         margin-left: 0%;
+        font-weight: 380;
     }
 
     .Teamdesktop h4 + p {
         transform: translate(6.5%);
+        font-weight: 320;
+       
     }
 
     .Teamdesktop p {
@@ -700,6 +731,7 @@
     .Teammobile h4 {
         font-size: 1.2rem;
         transform: translateX(5%);
+        font-weight: 100;
     }
 
     .Teammobile p {
@@ -708,6 +740,8 @@
     }
     .Teammobile h4+p{
         transform: translate(6.5%);
+        font-weight: 100;
+        margin-top: 1%;
 }
 
     .Teamdesktop h1,
