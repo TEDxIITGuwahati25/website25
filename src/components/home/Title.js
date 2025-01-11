@@ -65,7 +65,7 @@ const Title = () => {
             {/* <div className={styles.heading} style={calculateOpacityAndScale()}><h1>Welcome to TEDxIITGuwahati</h1></div> */}
             <div className={styles.container} style={calculateOpacityAndScale(250,450)}>
                 <div className={styles.gif}>
-                    <img src="/images/Tedx-logo-animation.gif"></img>
+                    <img src="./images/Tedx-logo-animation.gif"></img>
                 </div>
                 
                 <div className={styles.content}>
