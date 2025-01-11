@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import styles from './Event_19.module.css';
-const Modal = ({name, about, description, image, func}) => {
+const Modal = ({name, about, description, image, func, youtubeLink}) => {
   useEffect(()=>{
     document.body.style.overflowY = 'hidden';
     return ()=>{
@@ -26,6 +26,18 @@ const Modal = ({name, about, description, image, func}) => {
             <p>
               {description}
             </p>
+          </div>
+          <div className={styles.watchTalk}>
+          {youtubeLink && (
+                        <a
+                        href={`https://www.youtube.com/watch?v=${youtubeLink}`} // External link to YouTube
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.watchTalkLink}
+                      >
+                        Watch Talk
+                      </a>
+          )}
           </div>
         </div>
       </div>
