@@ -129,6 +129,7 @@ const ContactUs = () => {
                 {isSubmitting ? 'Submitting...' : 'Submit'}
               </button>
             </div>
+            <br></br>
             {successMsg && <p className={styles.successMsg}>Thank you for your response</p>}
           </form>
         </div>
