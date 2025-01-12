@@ -33,7 +33,7 @@ const AboutTed = () => {
             <button
               className={`tab-button ${activeTab === "AboutTED" ? "active" : ""}`}
               onClick={() => {
-                setContent("TED, founded in 1984, is a global community dedicated to sharing \"ideas worth spreading.\" Owned by a nonprofit foundation, TED aims to make great ideas accessible and spark meaningful conversations. Through its TEDx program, local communities and organizations can host TED-like events to foster connection and dialogue.");
+                setContent("TED, founded in 1984, is a global community dedicated to sharing \"ideas change everything.\" Owned by a nonprofit foundation, TED aims to make great ideas accessible and spark meaningful conversations. Through its TEDx program, local communities and organizations can host TED-like events to foster connection and dialogue.");
                 setActiveTab("AboutTED");
               }}
             >
