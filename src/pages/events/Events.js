@@ -23,7 +23,7 @@ const Events = () => {
         </div>
         <div className={styles.homeimage}>
           <img
-            src="./Images/eventsHome/coverImage2.png"
+            src="./images/eventsHome/coverImage2.png"
             alt="TeamImage"
           />
         </div>
@@ -49,7 +49,7 @@ const Events = () => {
             >
               <Link to="/Events/2024" className={styles.link_box}>
                 <img
-                  src="./Images/eventsHome/theme24.jpg"
+                  src="./images/eventsHome/theme24.jpg"
                   alt=""
                   className={styles.image}
                   id={styles["im1"]}
@@ -83,7 +83,7 @@ const Events = () => {
             >
               <Link to="/Events/2023" className={styles.link_box}>
                 <img
-                  src="./Images/eventsHome/theme_23.png"
+                  src="./images/eventsHome/theme_23.png"
                   alt=""
                   className={styles.image}
                   id={styles["im1"]}
@@ -118,7 +118,7 @@ const Events = () => {
             >
               <Link to="/Events/2022" className={styles.link_box}>
                 <img
-                  src="./Images/eventsHome/theme22.jpeg"
+                  src="./images/eventsHome/theme22.jpeg"
                   alt=""
                   className={styles.image}
                   id={styles["im1"]}
@@ -152,7 +152,7 @@ const Events = () => {
             >
               <Link to="/Events/2021" className={styles.link_box}>
                 <img
-                  src="./Images/eventsHome/theme21.png"
+                  src="./images/eventsHome/theme21.png"
                   alt=""
                   className={styles.image}
                   id={styles["im1"]}
@@ -186,7 +186,7 @@ const Events = () => {
             >
               <Link to="/Events/2019" className={styles.link_box}>
                 <img
-                  src="./Images/eventsHome/theme19.png"
+                  src="./images/eventsHome/theme19.png"
                   alt=""
                   className={styles.image}
                   id={styles["im1"]}
@@ -220,7 +220,7 @@ const Events = () => {
             >
               <Link to="/Events/2016" className={styles.link_box}>
                 <img
-                  src="./Images/eventsHome/theme16.png"
+                  src="./images/eventsHome/theme16.png"
                   alt=""
                   className={styles.image}
                   id={styles["im1"]}
