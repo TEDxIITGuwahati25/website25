@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./AboutTed1.css";
+import "./AboutTed.css";
 
 const AboutTed = () => {
   const [content, setContent] = useState("TED, founded in 1984, is a global community dedicated to sharing \"ideas worth spreading.\" Owned by a nonprofit foundation, TED aims to make great ideas accessible and spark meaningful conversations. Through its TEDx program, local communities and organizations can host TED-like events to foster connection and dialogue.");
@@ -26,7 +26,7 @@ const AboutTed = () => {
   return (
     <>
       <p className="maintitle">The World of TED</p>
-      <div className="container">
+      <div className="containerr">
         <div></div>
         <div className="about_container">
 
