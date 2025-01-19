@@ -1,7 +1,12 @@
+.maplocation{
+    padding-bottom: 3%;
+}
+
 .map{
     min-width: 90%;
+    /* max-width: 100%; */
     min-height: 400px;
-    margin: 20px 5% 30px 5%;
+    margin: 20px 5% 39px 5%;
 }
 .location{
     max-width: 90%;
@@ -50,5 +55,10 @@
     }
     .location{
         max-width: 40%;
+    }
+}
+@media (max-width:350px) {
+    .map{
+        width: 50%;
     }
 }

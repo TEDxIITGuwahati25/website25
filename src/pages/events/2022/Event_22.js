@@ -27,8 +27,8 @@ import Nildari from "./team22/Niladri Sarkar.jpg"
 const Event_22 = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState(null);
 
-  const openModal = ({name, about, description, image}) => {
-    setSelectedSpeaker({name, about, description,image});
+  const openModal = ({name, about, description, image, youtubeLink}) => {
+    setSelectedSpeaker({name, about, description,image, youtubeLink});
   };
 
   const closeModal = () => {
@@ -69,14 +69,14 @@ True innovations have always been found on this very edge.Are these moments of s
           <div id={styles.speakers}>
             <h2>Speakers</h2>
             <div id={styles.speakerContainer}>
-            <Card func={() => openModal({ name: 'Abhimanyu Singh', about: 'Co-founder of Hexprssions', description: `${Data.Abhimanyu}`, image: `${abhimanyu}` })} name='Abhimanyu Singh' id='#abhimanyu' image={abhimanyu} />
-            <Card func={() => openModal({name: 'Baland Jalal',about: 'Neuroscientist',description: `${Data.Baland}`,image: `${jalal}`})} name='Baland Jalal' id='#jalal' image={jalal} />
-            <Card func={() => openModal({name: 'Pritam Patra',about: 'Torque Magician',description: `${Data.Pritam}`,image: `${Magician}`})} name='Pritam Patra' id='#Pritam' image={Magician} />
-            <Card func={() => openModal({name: 'Parvathy Sailesh',about: 'Student UnrestricTED Winner',description: `${Data.Parvathy}`,image: `${pravathy}`})} name='Parvathy Sailesh' id='#Parvathy' image={pravathy} />
-            <Card func={() => openModal({name: 'Richard James MacCowan',about: 'BioFuturist',description: `${Data.Richard}`,image: `${james}`})} name='Richard James MacCowan' id='#james' image={james} />
-            <Card func={() => openModal({name: 'Rishabh Jain & Mandeep Gill',about: 'Co-Founder labour law advisor',description: `${Data.Mandeep}`,image: `${rishab}`})} name='Rishabh Jain & Mandeep Gill' id='#rishab' image={rishab} />
-            <Card func={() => openModal({name: 'Rohan Agrawal',about: 'Traveller',description: `${Data.Rohan}`,image: `${rohan}`})} name='Rohan Agrawal' id='#Rohan' image={rohan} />
-            <Card func={() => openModal({name: 'Sawmya Ray',about: 'Professor Humanities and Social Sciences',description: `${Data.Sawmya}`,image: `${saumya}`})} name='Sawmya Ray' id='#Sawmya' image={saumya} />
+            <Card func={() => openModal({ name: 'Abhimanyu Singh', about: 'Co-founder of Hexprssions', description: `${Data.Abhimanyu}`, image: `${abhimanyu}`,youtubeLink:'' })} name='Abhimanyu Singh' id='#abhimanyu' image={abhimanyu} />
+            <Card func={() => openModal({name: 'Baland Jalal',about: 'Neuroscientist',description: `${Data.Baland}`,image: `${jalal}`,youtubeLink:'FEHbet4YX78'})} name='Baland Jalal' id='#jalal' image={jalal} />
+            <Card func={() => openModal({name: 'Pritam Patra',about: 'Torque Magician',description: `${Data.Pritam}`,image: `${Magician}`,youtubeLink:'gtG7dUZK7PM'})} name='Pritam Patra' id='#Pritam' image={Magician} />
+            <Card func={() => openModal({name: 'Parvathy Sailesh',about: 'Student UnrestricTED Winner',description: `${Data.Parvathy}`,image: `${pravathy}`,youtubeLink:'bIbuzgdCYtg'})} name='Parvathy Sailesh' id='#Parvathy' image={pravathy} />
+            <Card func={() => openModal({name: 'Richard James MacCowan',about: 'BioFuturist',description: `${Data.Richard}`,image: `${james}`,youtubeLink:'z0ZiINCpID0'})} name='Richard James MacCowan' id='#james' image={james} />
+            <Card func={() => openModal({name: 'Rishabh Jain & Mandeep Gill',about: 'Co-Founder labour law advisor',description: `${Data.Mandeep}`,image: `${rishab}`,youtubeLink:'4Gc_-_Ngfxk'})} name='Rishabh Jain & Mandeep Gill' id='#rishab' image={rishab} />
+            <Card func={() => openModal({name: 'Rohan Agrawal',about: 'Traveller',description: `${Data.Rohan}`,image: `${rohan}`,youtubeLink:'jruIzjq6q54'})} name='Rohan Agrawal' id='#Rohan' image={rohan} />
+            <Card func={() => openModal({name: 'Sawmya Ray',about: 'Professor Humanities and Social Sciences',description: `${Data.Sawmya}`,image: `${saumya}`,youtubeLink:'SebJfNFOSnY'})} name='Sawmya Ray' id='#Sawmya' image={saumya} />
 
             </div>
           </div>
@@ -104,6 +104,7 @@ True innovations have always been found on this very edge.Are these moments of s
             image={selectedSpeaker.image}
             description = {selectedSpeaker.description}
             func={closeModal}
+            youtubeLink={selectedSpeaker.youtubeLink}
           />
         )}
         {selectedSpeaker && <div onClick={closeModal} id={styles.overlay}></div>}

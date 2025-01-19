@@ -19,7 +19,7 @@ const Footer = () => {
               </text>
             </svg>*/}
             <a href="Home">
-            <img src="./images/WhiteTextLogo.png" alt="TEDx IIT Guwahati" className="footer-logo" />
+            <NavLink to="/" onClick={scrollToTop}><img src="./images/WhiteTextLogo.png" alt="TEDx IIT Guwahati" className="footer-logo" /></NavLink>
             </a>
            
 
