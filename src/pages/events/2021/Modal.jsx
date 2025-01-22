@@ -26,9 +26,7 @@ const Modal = ({name, about, description, image, func, youtubeLink}) => {
           <div className={styles.description}>
             <p>
               {description}
-            </p>
-          </div>
-          <div className={youtubeLink ? styles.watchTalk:styles.hideLink}>
+              <div className={youtubeLink ? styles.watchTalk:styles.hideLink}>
           {youtubeLink && (
                         <a
                         href={`https://www.youtube.com/watch?v=${youtubeLink}`} // External link to YouTube
@@ -40,6 +38,9 @@ const Modal = ({name, about, description, image, func, youtubeLink}) => {
           )}
           
           </div>
+            </p>
+          </div>
+
           </div>
           </div>
         )

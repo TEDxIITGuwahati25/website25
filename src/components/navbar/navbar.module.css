@@ -53,16 +53,16 @@
     text-decoration: none;
     color: white;
 }
-.navbardesktop a:hover{
+/* .navbardesktop a:hover{
     color: red;
-}
+} */
 .div7 img{
     max-width: 20px;
 }
 .booknow{
     background-color: red;
     border-radius: 20px;
-    padding: 6px 15px 6px 18px ;
+    padding: 6px 15px 9px 18px ;
    
     min-width: 90px;
 }

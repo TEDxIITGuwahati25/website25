@@ -20,6 +20,7 @@ import Footer from './components/footer/Footer.js';
 // import ScrollButton from './components/scroll/ScrollButton.js'
 import Navbar from './components/navbar/navbar.js'
 import GoogleAnalytics from "./components/google analytics/Google.js";
+// import Speaker from './components/speakers/speaker.js'
 
 function App() {
   const [isLoaded,setIsLoaded] =useState(false);
