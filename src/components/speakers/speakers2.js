@@ -1,9 +1,9 @@
-import styles from "./speakers.module.css";
+import styles from "./speakers2.module.css";
 import SpeakerModal from "./speakerModal";
 import {useState} from "react";
 import data from './speaker_data';
 
-const Speakers = () => {
+const Speakers2 = () => {
     const [modal,setModal] = useState(false)
     const [speaker,setSpeaker] = useState(null)    
     const togglemodal =() =>{
@@ -50,28 +50,31 @@ const Speakers = () => {
                     <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Capt Satendra Sangwan", about:"Phd",image: "./images/Meghana.png",description:data.sangwan})}}><img src="images/Meghana.png" /></button>
                     <div className={styles.galleryname}>Name</div>
                </div>
+            </div>
 
 
-               <div className={styles.gallerypanel}>
+              <div className={styles.gallery2}>
+              <div className={styles.gallerypanel2}>
                     <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Rituparna Neog", about:"Phd",image: "./images/Meghana.png",description:data.Rituparna})}}><img src="images/Meghana.png" /></button>
                     <div className={styles.galleryname}>Name</div>
                </div>
 
-               <div className={styles.gallerypanel}>
+               <div className={styles.gallerypanel2}>
                     <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Asutosh Kashyap", about:"Phd",image: "./images/Meghana.png",description:data.Asutosh})}}><img src="images/Meghana.png" /></button>
                     <div className={styles.galleryname}>Name</div>
                </div>
 
-               <div className={styles.gallerypanel}>
+               <div className={styles.gallerypanel2}>
                     <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Sudhana Sankar", about:"Phd",image: "./images/Meghana.png",description:data.Sudhana})}}><img src="images/Meghana.png" /></button>
                     <div className={styles.galleryname}>Name</div>
                </div>
 
-               <div className={styles.gallerypanel}>
+               <div className={styles.gallerypanel2}>
                     <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Mrinal Talukdar", about:"Phd",image: "./images/Meghana.png",description:data.Mrinal})}}><img src="images/Meghana.png" /></button>
                     <div className={styles.galleryname}>Name</div>
                </div>
-          </div>
+              </div>
+          
           {/* <div>
                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, consectetur ab quaerat molestias temporibus minus amet voluptate doloremque atque quo voluptates sequi numquam illo sint doloribus praesentium accusamus cumque rerum est, quam adipisci reprehenderit. Est sint facere impedit quo asperiores quae minima reprehenderit quibusdam facilis, officiis molestias velit cumque omnis tempore minus nobis similique eaque molestiae! Repellat, voluptas minima? Quasi vel nihil neque, nemo odit adipisci est dignissimos placeat laboriosam reiciendis accusamus veritatis quos, quis cum officia, soluta veniam unde. Quos tenetur voluptate quas, eligendi eaque non ab aliquid autem amet delectus sapiente quasi repellat alias eius. Voluptate, officiis quos.</h1>
           </div> */}
@@ -79,4 +82,4 @@ const Speakers = () => {
     );
 }
  
-export default Speakers;
+export default Speakers2;

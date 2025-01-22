@@ -8,9 +8,13 @@ const SpeakerModal = ({func ,name ,about ,image ,description}) => {
                 <h1 className={styles.name}>{name}</h1>
                 <hr></hr>
                     <div className={styles.speaker}>
+                        <div className={styles.speakercontent}>
                         <img src={image} ></img>
-                        <p>{description}</p>
+                        
                         <h2>{about}</h2>
+                        </div>
+
+                        <p>{description}</p>
                     </div>
                     
                 <button className={styles.closemodal} onClick={func}>
