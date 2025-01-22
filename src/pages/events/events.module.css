@@ -222,6 +222,9 @@ body {
 .iconv {
   color: white;
 }
+.homeimage{
+  margin-top: -1%;
+}
 .homeimage img {
   width: 100%;
   margin: auto;
