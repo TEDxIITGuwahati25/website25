@@ -26,20 +26,21 @@ const Modal = ({name, about, description, image, func, youtubeLink}) => {
           <div className={styles.description}>
             <p>
               {description}
-            </p>
-          </div>
-          <div className={styles.watchTalk}>
+              <div className={youtubeLink ? styles.watchTalk : styles.hideLink}>
           {youtubeLink && (
                         <a
                         href={`https://www.youtube.com/watch?v=${youtubeLink}`} // External link to YouTube
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={styles.watchTalkLink}
+                    
                       >
                         Watch Talk
                       </a>
           )}
           </div>
+            </p>
+          </div>
+
           </div>
           </div>
         )
