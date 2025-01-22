@@ -197,3 +197,19 @@
      }
 }
 
+.content .button{
+    text-align:center ;
+    font-size: 1.2em;
+    margin-top:13px;
+    font-weight: 600;
+    margin-left: -2px;
+    background-color: rgb(255, 0, 0);
+    border-radius:15px;
+    padding:10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    width: 130px;
+}
+.content .button:hover{
+    background-color: rgb(255, 80, 80);
+}

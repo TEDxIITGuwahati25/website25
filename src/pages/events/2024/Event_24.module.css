@@ -334,7 +334,7 @@ header h2{
     padding-top: 2vh;
     transform: translate(-50%, -50%) scale(1);
     transition: all 300ms ease-in-out;
-    background-color: #2f283c;
+    background-color: #272727;
     border-radius: 7px;
     z-index: 10;
     width:  1000px;
@@ -420,9 +420,10 @@ header h2{
   /* In your Event_24.module.css */
   
   .watchTalk {
-    margin-top: 180px;
+    margin-top: 30px;
     padding: 4px 16px; 
     height: 50px;
+    width: 80px;
     background-color: rgb(211, 27, 27);
     color: white;
     text-decoration: none;
@@ -435,6 +436,7 @@ header h2{
   a {
     color: #c1c1c1;
     text-decoration: none;
+    text-align: center;
   }
   .watchTalk:hover {
     background-color: rgb(206, 139, 139);

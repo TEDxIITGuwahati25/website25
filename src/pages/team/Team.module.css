@@ -276,10 +276,10 @@ html, body {
         text-align: left;
         transform: translateX(0%);
         margin-left: 0;
-        width: 100%;
-        
+        width: 90%;
+       
     }
-
+    
     .Teammobile .Teamidmobile {
         display: flex;
         flex-direction: column;
