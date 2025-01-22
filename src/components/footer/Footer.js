@@ -12,7 +12,6 @@ const Footer = () => {
     <div className="footer-outer">
       <div className="row1">
            {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
-
               <text x="20" y="50" font-family="Arial, sans-serif" font-weight="bold" font-size="40">
                 <tspan fill="red">TED</tspan>
                 <tspan fill="red">x</tspan>
@@ -82,7 +81,8 @@ const Footer = () => {
 
             </div>
             
-            <span>Mail us <span style={{ color: 'red' }}>at iitg.tedx@gmail.com</span></span>
+            <span className="footer-email">Mail us at <a href="mailto:iitg.tedx@gmail.com" style={{ color: 'red' }}>iitg.tedx@gmail.com</a></span>
+
            
           </div>
         </div>
