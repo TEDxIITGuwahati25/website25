@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 // import Navbar from "../../../components/navbar/Navbar";
 // import ScrollButton from '../../../components/scrollButton/scrollButton';
 import theme24 from "../../../assets/theme24.jpg";
-import logo_23 from "../../../assets/2023_logo.png";
+import logo_24 from "../../../assets/2024_logo.png";
 // import Footer from "../../../components/footer/Footer"
 import styles from "./Event_24.module.css";
 import Modal from "./Modal"
@@ -52,7 +52,7 @@ const Event_24 = () => {
       <div id={styles.body}>
         <header>
           <div>
-            <img src={logo_23} alt="theme logo" />
+            <img src={logo_24} alt="theme logo" />
             <div id={styles.theme}>
               <h1>Theme 2024:</h1>
               <h1>Echoes of Stillness</h1>
