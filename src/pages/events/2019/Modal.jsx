@@ -39,7 +39,6 @@ const Modal = ({name, about, description, image, func, youtubeLink}) => {
                     </div>
             </p>
           </div>
-
         </div>
       </div>
       )

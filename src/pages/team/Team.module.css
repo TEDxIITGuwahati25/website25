@@ -22,7 +22,7 @@
     padding: 1.25rem;
 }
 
-/* Style for each individual team member box */
+
 .Teamiddesktop {
     padding: 1.25rem;
     display: flex;
@@ -39,12 +39,12 @@
     max-width: 100%;
 }
 
-/* Hover effect on the team member boxes */
+
 .Teamiddesktop:hover {
     transform: scale(1.05);
 }
 
-/* Styling the image inside each team member box */
+
 .Teamiddesktop img {
     width: 100%;
     height: auto;
@@ -54,21 +54,21 @@
     margin-bottom: 0.625rem;
 }
 
-/* Title (name) styling */
+
 .imgTitleName {
     font-size: 1.2rem;
     font-weight: 500;
     color: white;
 }
 
-/* Subtitle (position or role) styling */
+
 .imgTitlePost {
     font-weight: 300;
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* Ensuring text is centered below images */
+
 .Teamiddesktop .imgTitleName p,
 .Teammobile .imgTitleName p {
     font-size: 1rem;
@@ -90,6 +90,9 @@
 
 /* Responsive Design: Desktop Layout (768px to 970px) */
 @media (min-width: 768px) and (max-width: 970px) {
+    .h4,.h4+p{
+        font-weight: 100;
+    }
     .Teamdesktopdetails {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
@@ -109,6 +112,9 @@
 
 /* Media Query for screen size between 970px and 1100px */
 @media (min-width: 970px) and (max-width: 1100px) {
+    .h4,.h4+p{
+        font-weight: 100;
+    }
     .Teamdesktopdetails {
         grid-template-columns: repeat(3, 1fr);
         gap: 0.3rem;
@@ -207,7 +213,7 @@
     visibility: visible;
 }
 
-/* Circle image styling */
+
 .imageCircle {
     width: 15rem;
     height: 15rem;
@@ -235,7 +241,7 @@
     transform: scale(1.2);
 }
 
-/* Before pseudo-element for circle image hover effect */
+
 .imageCircle::before {
     content: "";
     width: 17rem;
@@ -255,8 +261,10 @@
     transform: rotate(180deg);
 }
 
-/* Responsive Design: Mobile Layout (< 480px) */
 @media (max-width: 480px) {
+    h4,h4+p{
+        font-weight: 100;
+    }
     .Teammobile h1,
     .Teammobile h4,
     .Teammobile p {
@@ -264,6 +272,7 @@
         transform: translateX(0%);
         margin-left: 0;
         width: 100%;
+        
     }
 
     .Teammobile .Teamidmobile {
@@ -279,7 +288,7 @@
 
     .Teammobile .Teamidmobile img {
         width: 80%;
-        height: auto;
+        height: 80%;
         object-fit: cover;
         border-radius: 50%;
         box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
@@ -311,9 +320,16 @@
     }
     .Teammobile h1,.Teammobile h4,.Teammobile h4+p{
         margin-left:10% ;
+        font-weight: 100;
+    }
+    .Teammobile h4+p{
+        margin-top: 1%;
     }
 }
 @media (min-width: 771px) and (max-width: 970px) {
+    h4,h4+p{
+        font-weight: 100;
+    }
     .Teamdesktopdetails {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
@@ -334,6 +350,7 @@
     .Teamdesktop h4 {
         font-size: 1.2rem;
         margin-left: 0;
+        font-weight: 100;
     }
 
     .Teamdesktop p {
@@ -386,6 +403,7 @@
     .Teammobile h4 {
         font-size: 1.2rem;
         transform: translateX(5%);
+        
     }
 
     .Teammobile p {
@@ -397,6 +415,7 @@
     }
     .Teamdesktop h4+p{
         transform: translate(6.5%);
+        margin-top: 1%;
     }
 }
 @media (min-width: 971px) and (max-width: 1100px) {
@@ -420,6 +439,7 @@
     .Teamdesktop h4 {
         font-size: 1.2rem;
         margin-left: 0;
+        font-weight:100;
     }
 
     .Teamdesktop p {
@@ -470,7 +490,7 @@
     }
 
     .Teammobile h4 {
-        font-size: 1.2rem;
+        font-weight: 100;
         transform: translateX(5%);
     }
 
@@ -483,6 +503,8 @@
     }
     .Teamdesktop h4+p{
         transform: translate(6.5%);
+        font-weight: 100;
+        margin-top: 1%;
     }
 }
 @media (min-width: 1100px) {
@@ -505,7 +527,7 @@
     }
 
     .Teamdesktop h4 {
-        font-size: 1.5rem;
+        font-weight: 100;
         margin-left: 0;
     }
 
@@ -513,7 +535,10 @@
         font-size: 1.2rem;
         margin-left: 0;
     }
-
+    .Teamdesktop h4+p{
+        font-weight: 100;
+        margin-top: 0.8%;
+    }
     .Teamidmobile {
         width: 40%;
         margin: 1rem;
@@ -563,11 +588,11 @@
         transform: scale(1.1);
     }
 
-    /* Before pseudo-element for circle image hover effect */
+    
     .imageCircle::before {
         content: "";
-        width: 19rem;
-        height: 9.5rem;
+        width: 20rem;
+        height: 10rem;
         background-color: rgb(158, 15, 15); 
         position: absolute;
         top: -1rem;
@@ -591,6 +616,7 @@
     .Teammobile h4 {
         font-size: 1.3rem;
         transform: translateX(0);
+        font-weight: 100;
     }
 
     .Teammobile p {
@@ -603,6 +629,7 @@
     }
     .Teamdesktop h4 + p {
         transform: translate(6.5%);
+        font-weight: 100;
     }
 }
 @media (min-width: 481px) and (max-width: 770px) {
@@ -631,10 +658,13 @@
     .Teamdesktop h4 {
         font-size: 1.3rem;
         margin-left: 0%;
+        font-weight: 380;
     }
 
     .Teamdesktop h4 + p {
         transform: translate(6.5%);
+        font-weight: 320;
+       
     }
 
     .Teamdesktop p {
@@ -661,10 +691,11 @@
 
     .Teamidmobile img {
         width: 80%;
-        height: auto;
+        height: 80%;
         object-fit: cover;
         border-radius: 50%;
         box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+        /* box-shadow: 0 0 0 rgba(0,0,0,0.2); */
         margin-bottom: 1rem;
         display: block;
         margin-left: auto;
@@ -700,6 +731,7 @@
     .Teammobile h4 {
         font-size: 1.2rem;
         transform: translateX(5%);
+        font-weight: 100;
     }
 
     .Teammobile p {
@@ -708,6 +740,8 @@
     }
     .Teammobile h4+p{
         transform: translate(6.5%);
+        font-weight: 100;
+        margin-top: 1%;
 }
 
     .Teamdesktop h1,

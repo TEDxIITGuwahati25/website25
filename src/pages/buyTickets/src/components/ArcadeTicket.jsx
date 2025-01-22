@@ -19,7 +19,7 @@ const ArcadeTicket = ({ type, date, time, onBook, className = "" }) => {
         {/* Ticket Content */}
         <div className="ticket-content">
           <div className="header">
-            <div className="header-title"><img src="/images/WhiteTextLogo.png" alt="TEDx IIT Guwahati" className="image"/></div>
+            <div className="header-title"><img src="./images/WhiteTextLogo.png" alt="TEDx IIT Guwahati" className="image"/></div>
             <div className="header-subtitle">
               {isStudent ? "⭐ IITG STUDENT PASS ⭐" : "⭐ GENERAL ADMISSION ⭐"}
             </div>
