@@ -3,8 +3,8 @@ import Schedule from './schedule'
 import Timeline from './timeline'
 import ScrollButton from '../../components/scroll/ScrollButton';
 import { useEffect } from 'react';
-import Title
- from '../../components/home/Title';
+import Title from '../../components/home/Title';
+import MerchandiseComponent from '../../components/home/merch';
 const Home = () => {
 
   useEffect(()=>{
@@ -15,6 +15,7 @@ const Home = () => {
     <>
       <div><Title/></div>
       <ScrollButton/>
+      <MerchandiseComponent/>
     </>
   );
 }
