@@ -3,7 +3,11 @@ import { CiMenuBurger } from "react-icons/ci";
 import { TbXboxX } from "react-icons/tb";
 import {NavLink} from "react-router-dom";
 import { useState,useEffect,useRef} from "react";
+import StarBorder from "./StarBorder";
 const Navbarmobile = () => {
+   
+  
+
     const scrollToTop = () => {
         window.scrollTo(0, 0);
       };
@@ -40,7 +44,14 @@ const Navbarmobile = () => {
                 <div className={styles.div3}><NavLink to="/Team"onClick={scrollToTop} style={({isActive})=>showActivePage(isActive,'red')}>Team</NavLink></div>
                 <div className={styles.div4}><NavLink to="/Events"onClick={scrollToTop} style={({isActive})=>showActivePage(isActive,'red')}>Events</NavLink></div>
                 <div className={styles.div5}><NavLink to="/ContactUs"onClick={scrollToTop} style={({isActive})=>showActivePage(isActive,'red')}>Contact Us</NavLink></div>
-                <div className={styles.div6}><NavLink to="/buyTickets" onClick={scrollToTop} style={({isActive})=>showActivePage(isActive,'red')}>Book Now</NavLink></div>
+                <div className={styles.div6}><NavLink to="/buyTickets" onClick={scrollToTop} style={({isActive})=>showActivePage(isActive,'red')}><StarBorder
+as="button"
+className="custom-class"
+color="red"
+speed="1s"
+>
+
+Book Now</StarBorder></NavLink></div>
                 
             </div>}
         </div>
