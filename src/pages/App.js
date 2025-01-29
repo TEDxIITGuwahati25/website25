@@ -19,7 +19,9 @@ import Preloader from './components/preloader/Preloader.js'
 import Footer from './components/footer/Footer.js';
 // import ScrollButton from './components/scroll/ScrollButton.js'
 import Navbar from './components/navbar/navbar.js'
-import Pages from './pages/404.js'
+import Page from './pages/404.js'
+// import Speaker from './components/speakers/speaker.js'
+
 function App() {
   const [isLoaded,setIsLoaded] =useState(false);
 
@@ -50,7 +52,7 @@ function App() {
             <Route path="/Terms" element={<Terms />} />
             <Route path="/Privacy" element={<Privacy />} />
             <Route path="/buyTickets" element={<BuyTickets/>}></Route>
-            <Route path="*" element={<Pages/>}/>
+            <Route path="*" element={<Page/>} />
           </Routes>
           {/* <ScrollButton/> */}
           <Footer /> 
