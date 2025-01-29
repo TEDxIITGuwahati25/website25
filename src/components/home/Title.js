@@ -66,6 +66,7 @@ const Title = () => {
             <div className={styles.container} style={calculateOpacityAndScale(100,400)}>
                 <div className={styles.gif}>
                     <img src="./images/Tedx-logo-animation.gif"></img>
+
                 </div>
                 
                 <div className={styles.content}>
@@ -75,8 +76,10 @@ const Title = () => {
                     </p><br></br>
                      <p>                    However, the temporary nature of our creations, does not lessen the importance of our efforts. Is the purpose only to achieve a lasting result, or is there deeper meaning in the act of building itself ? Should we continue to pursue something, knowing that it may or may not last forever--just for the joy we find in it? It speaks to those who build, innovate, or dream with the understanding that the result may not be permanent.  
                      </p><br></br>
-                    <p>The Seaside Citadel is a reminder that the beauty of what we build lies not in its endurance, but in the moments of creation and in the lessons learned in the process. It encourages us to revel in the act of building, knowing that the tides will come, and that’s okay. For even as the citadel falls to the sea, the lessons, memories, and experiences we gain from the journey remain within us
+                    <p>The Seaside Citadel is a reminder that the beauty of what we build lies not in its endurance, but in the moments of creation and in the lessons learned in the process. It encourages us to revel in the act of building, knowing that the tides will come, and that’s okay. For even as the citadel falls to the sea, the lessons, memories, and experiences we gain from the journey remain within us.
                     </p>
+                    <div className={styles.button}><a href="https://tedxiitguwahati.medium.com/when-the-waves-come-the-story-of-the-seaside-citadel-d3c696970227">Theme Blog</a></div>
+
                 </div>
             </div>
         </div>
