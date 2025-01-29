@@ -76,9 +76,9 @@ export default function ExclusiveBenefits() {
               <span className={styles.bullet_point}>*</span>
               This conference is not open for children below 8 years
             </li> */}
-            <li className={styles.benefit_item_highlight}>
+            {/* <li className={styles.benefit_item_highlight}>
               & benefits of general pass
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
