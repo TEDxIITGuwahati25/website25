@@ -16,7 +16,7 @@ const Speakers = () => {
     return (
         <div className={styles.speakers}>
             <h1 className={styles.heading1}>Speakers</h1>
-            <h2 className={styles.heading2}>Our upcoming event Speakers</h2>
+            <h2 className={styles.heading2}></h2>
             {modal && <SpeakerModal 
             func={togglemodal}
             name={speaker.name}
@@ -29,47 +29,47 @@ const Speakers = () => {
 
                <div className={styles.gallerypanel}>
                     
-                    <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name: "Aleena", about: "educator", image: "./images/Meghana.png", description: data.Aleena})}}><img src="./images/Meghana.png" />
+                    <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name: "Rhea Singha", about: "Miss Universe India 2024", image: ".images/speakers/rhea.png", description: data.Rhea})}}><img src="./images/Meghana.png" />
                     
                     </button>
-                    <div className={styles.galleryname}>Name</div>
+                    <div className={styles.galleryname}>Rhea Singha</div>
                </div>
                
 
                <div className={styles.gallerypanel}>
-                    <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Rajat Rathor", about:"Cop",image: "./images/Meghana.png",description:data.Rajat})}}><img src="./images/Meghana.png"></img></button>
-                    <div className={styles.galleryname}>Name</div>
+               <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Lima Das", about:"Actress, Classical Dancer, Vocalist, Former Dental Surgeon",image: "./images/Meghana.png",description:data.Lima})}}><img src="./images/Meghana.png"></img></button>
+               <div className={styles.galleryname}>Lima Das</div>
                </div>
 
                <div className={styles.gallerypanel}>
-                    <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Ilina Sinha", about:"Phd",image: "./images/Meghana.png",description:data.illina})}}><img src="./images/Meghana.png"  /></button>
-                    <div className={styles.galleryname}>Name</div>
+               <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Riten Debnath", about:"Entrepreneur, CEO of Fueler, Tech Innovator",image: "./images/Meghana.png",description:data.Riten})}}><img src="./images/Meghana.png"  /></button>
+               <div className={styles.galleryname}>Riten Debnath</div>
                </div>
                
                <div className={styles.gallerypanel}>
-                    <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Capt Satendra Sangwan", about:"Phd",image: "./images/Meghana.png",description:data.sangwan})}}><img src="images/Meghana.png" /></button>
-                    <div className={styles.galleryname}>Name</div>
+               <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Vijaya Aswani", about:"Illustrator, Creative Storyteller, Art Curator",image: "./images/Meghana.png",description:data.Vijaya})}}><img src="images/Meghana.png" /></button>
+               <div className={styles.galleryname}>Vijaya Aswani</div>
                </div>
 
 
                <div className={styles.gallerypanel}>
-                    <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Rituparna Neog", about:"Phd",image: "./images/Meghana.png",description:data.Rituparna})}}><img src="images/Meghana.png" /></button>
-                    <div className={styles.galleryname}>Name</div>
+               <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Shankuraj Konwar", about:"Singer-Songwriter, Assamese music icon",image: "./images/Meghana.png",description:data.Shankuraj})}}><img src="images/Meghana.png" /></button>
+               <div className={styles.galleryname}>Shankuraj Konwar</div>
                </div>
 
                <div className={styles.gallerypanel}>
-                    <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Asutosh Kashyap", about:"Phd",image: "./images/Meghana.png",description:data.Asutosh})}}><img src="images/Meghana.png" /></button>
-                    <div className={styles.galleryname}>Name</div>
+               <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Rajni Basumatary", about:"Filmmaker, Actor, Director, Cultural Change-Maker",image: "./images/Meghana.png",description:data.Rajni})}}><img src="images/Meghana.png" /></button>
+               <div className={styles.galleryname}>Rajni Basumatary</div>
                </div>
 
                <div className={styles.gallerypanel}>
-                    <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Sudhana Sankar", about:"Phd",image: "./images/Meghana.png",description:data.Sudhana})}}><img src="images/Meghana.png" /></button>
-                    <div className={styles.galleryname}>Name</div>
+               <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Bipul Bhuyan", about:"Experimental Physicist, IIT Guwahati, Neutrino Researcher",image: "./images/Meghana.png",description:data.Bipul})}}><img src="images/Meghana.png" /></button>
+               <div className={styles.galleryname}>Bipul Bhuyan</div>
                </div>
 
                <div className={styles.gallerypanel}>
-                    <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Mrinal Talukdar", about:"Phd",image: "./images/Meghana.png",description:data.Mrinal})}}><img src="images/Meghana.png" /></button>
-                    <div className={styles.galleryname}>Name</div>
+               <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Sneha Roy", about:"Poet, Researcher, Speaker, Gender and Literature Scholar",image: "./images/Meghana.png",description:data.Sneha})}}><img src="images/Meghana.png" /></button>
+               <div className={styles.galleryname}>Sneha Roy</div>
                </div>
           </div>
           {/* <div>
