@@ -85,7 +85,7 @@ body.active-modal {
         transform: translateX(9vw);
     }
     .speakercontent h2{
-        transform: translateX(28vw);
+        transform: translateX(10vw);
         padding-top: 5px;
     }
     .speaker p{
@@ -102,10 +102,10 @@ body.active-modal {
         float: none;
     }
     .speakercontent img{
-        transform: translateX(2vw);
+        transform: translateX(8vw);
     }
     .speakercontent h2{
-        transform: translateX(28vw);
+        transform: translateX(6vw);
         padding-top: 5px;
     }
     .speaker p{
