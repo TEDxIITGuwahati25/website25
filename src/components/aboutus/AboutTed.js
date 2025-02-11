@@ -14,13 +14,13 @@ const AboutTed = () => {
 
     let currentIndex = 0;
 
-    const interval = setInterval(() => {
-      currentIndex = (currentIndex + 1) % tabs.length;
-      setContent(tabs[currentIndex].text);
-      setActiveTab(tabs[currentIndex].key);
-    }, 10000);
+    // const interval = setInterval(() => {
+    //   currentIndex = (currentIndex + 1) % tabs.length;
+    //   setContent(tabs[currentIndex].text);
+    //   setActiveTab(tabs[currentIndex].key);
+    // }, 10000);
 
-    return () => clearInterval(interval);
+    // return () => clearInterval(interval);
   }, []);
 
   return (
@@ -53,7 +53,7 @@ const AboutTed = () => {
               <button
                 className={`tab-button ${activeTab === "AboutTEDxIITG" ? "active" : ""}`}
                 onClick={() => {
-                  setContent("TEDxIITGuwahati, launched in 2016, is an annual event organized by IIT Guwahati students. Run by passionate volunteers, it offers a TED-like experience, fostering dialogue and collaboration through engaging talks and interactive sessions for the IIT Guwahati and wider Indian communities.");
+                  setContent("TEDxIITGuwahati, launched in 2016, is an annual event organized by IIT Guwahati students. Run by passionate volunteers, it offers a TED-like experience, fostering dialogue and collaboration through engaging talks and interactive sessions for IIT Guwahati and wider Indian communities.");
                   setActiveTab("AboutTEDxIITG");
                 }}
               >
