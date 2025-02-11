@@ -34,8 +34,8 @@ function BuyTickets() {
                 date="Feb 9, 2025"
                 time="9:00 AM"
                 onBook={handleBook}
-                buttonText="IITG Pass!"
-                buttonLink="https://unstop.com/p/tedxiitguwahati-iitg-student-pass-tedxiitguwahati-1377729" 
+                buttonText="CLOSED"
+                // buttonLink="https://unstop.com/p/tedxiitguwahati-iitg-student-pass-tedxiitguwahati-1377729" 
                 className="ticket student-ticket"
               />
               <ArcadeTicket
@@ -43,8 +43,8 @@ function BuyTickets() {
                 date="Feb 9, 2025"
                 time="9:00 AM"
                 onBook={handleBook}
-                buttonText="General Pass!" 
-                buttonLink="https://mstats.dare2compete.com/CL0/https:%2F%2Funstop.com%2Fp%2Ftedxiitguwahati-general-pass-tedxiitguwahati-1379035%3Futm_campaign=site-emails%26utm_medium=d2c-automated%26utm_source=you-did-it-invite-only-mode-activated-for-tedxiitguwahati-general-pass/1/01090194b16267f7-884a7dd1-13e8-4528-896c-273050282595-000000/kULGVM4m-Lo8_d_uzwJpWVWTBL-chzQCgdW7uuD6aXA=192" 
+                buttonText="CLOSED" 
+                // buttonLink="https://mstats.dare2compete.com/CL0/https:%2F%2Funstop.com%2Fp%2Ftedxiitguwahati-general-pass-tedxiitguwahati-1379035%3Futm_campaign=site-emails%26utm_medium=d2c-automated%26utm_source=you-did-it-invite-only-mode-activated-for-tedxiitguwahati-general-pass/1/01090194b16267f7-884a7dd1-13e8-4528-896c-273050282595-000000/kULGVM4m-Lo8_d_uzwJpWVWTBL-chzQCgdW7uuD6aXA=192" 
                 className="ticket general-ticket"
               />
             </div>
