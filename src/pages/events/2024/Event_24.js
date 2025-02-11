@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 // import Navbar from "../../../components/navbar/Navbar";
 // import ScrollButton from '../../../components/scrollButton/scrollButton';
 import theme24 from "../../../assets/theme24.jpg";
-import logo_23 from "../../../assets/2023_logo.png";
+import logo_23 from "../../../assets/2024_logo.png";
 // import Footer from "../../../components/footer/Footer"
 import styles from "./Event_24.module.css";
 import Modal from "./Modal"
@@ -17,13 +17,13 @@ import Neog from "./speakers24/Neog.jpg"
 import rajat from "./speakers24/rajat.jpg"
 import mrinal from "./speakers24/mrinal.jpg"
 import sudhana from "./speakers24/sudhana.jpg"
-import Ashish from "./team24/Ashish_new.jpeg"
-import Divyansh from "./team24/Divyansh_square.jpg"
+import Ashish from "./team24/ashish2.jpg"
+import Divyansh from "./team24/divyansh.jpg"
 import Harsh from "./team24/Harsh_square.jpg"
-import Kanv from "./team24/Kanv_square.png"
+import Kanv from "./team24/kanv.jpg"
 import Manish from "./team24/Manish_square.jpg"
 import Pankaj from "./team24/Pankaj1_square.jpg"
-import Pranjal from "./team24/Pranjal_square.jpg"
+import Pranjal from "./team24/pranjal.jpg"
 import Punakshit from "./team24/Punakshit.jpg"
 import Rajeev from "./team24/Rajeev.jpg"
 import Ravi from "./team24/Ravi_square.jpg"
