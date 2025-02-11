@@ -14,8 +14,8 @@ const Location = () => {
                  <h1>Hosted in IIT Guwahati</h1>
                  <p>It's time that we give the leaders around us a stage to discuss their ideas worth spreading.
                     Join us at our IN-PERSON event to be held at Indian Institute of Technology in Guwahati.<br></br>
-                    Senate Hall<br></br>
-                    Administration Building, IIT Guwahati, India<br></br>
+                    Mini Auditorium<br></br>
+                    IIT Guwahati, India<br></br>
                     781039
                   </p>
                   <a href="https://maps.app.goo.gl/2dkMRZNZyQbS2sW26" target="_blank"><button>View Location</button></a>
