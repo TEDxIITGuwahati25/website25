@@ -17,7 +17,11 @@ const Home = () => {
       <div><Title/></div>
       <div><Speaker /></div>
       <ScrollButton/>
+<<<<<<< HEAD
       <MerchandiseComponent/>
+=======
+      <Speaker />
+>>>>>>> 9c14e517fb0fe65674b620d55942f05cf3d91f67
     </>
   );
 }

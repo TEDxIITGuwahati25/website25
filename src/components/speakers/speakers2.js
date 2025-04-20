@@ -16,7 +16,11 @@ const Speakers2 = () => {
     return (
         <div className={styles.speakers}>
             <h1 className={styles.heading1}>Speakers</h1>
+<<<<<<< HEAD
             <h2 className={styles.heading2}>Our upcoming event Speakers</h2>
+=======
+            {/* <h2 className={styles.heading2}>Our upcoming event Speakers</h2> */}
+>>>>>>> 9c14e517fb0fe65674b620d55942f05cf3d91f67
             {modal && <SpeakerModal 
             func={togglemodal}
             name={speaker.name}
@@ -29,14 +33,22 @@ const Speakers2 = () => {
 
                <div className={styles.gallerypanel}>
                     
+<<<<<<< HEAD
                     <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name: "Aleena", about: "educator", image: "./images/Meghana.png", description: data.Aleena})}}><img src="./images/Meghana.png" />
                     
                     </button>
                     <div className={styles.galleryname}>Name</div>
+=======
+               <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name: "Rhea Singha", about: "Miss Universe India 2024", image: "./images/speakers/rhea.png", description: data.Rhea})}}><img src="./images/speakers/rhea.png" />
+                    
+                    </button>
+                    <div className={styles.galleryname}>Rhea Singha</div>
+>>>>>>> 9c14e517fb0fe65674b620d55942f05cf3d91f67
                </div>
                
 
                <div className={styles.gallerypanel}>
+<<<<<<< HEAD
                     <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Rajat Rathor", about:"Cop",image: "./images/Meghana.png",description:data.Rajat})}}><img src="./images/Meghana.png"></img></button>
                     <div className={styles.galleryname}>Name</div>
                </div>
@@ -49,12 +61,27 @@ const Speakers2 = () => {
                <div className={styles.gallerypanel}>
                     <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Capt Satendra Sangwan", about:"Phd",image: "./images/Meghana.png",description:data.sangwan})}}><img src="images/Meghana.png" /></button>
                     <div className={styles.galleryname}>Name</div>
+=======
+               <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Lima Das", about:"Actress, Classical Dancer, Vocalist, Former Dental Surgeon",image: "./images/speakers/limaF.png",description:data.Lima})}}><img src="./images/speakers/limaF.png"></img></button>
+               <div className={styles.galleryname}>Lima Das</div>
+               </div>
+
+               <div className={styles.gallerypanel}>
+               <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Riten Debnath", about:"Entrepreneur, CEO of Fueler, Tech Innovator",image: "./images/speakers/ritenF.png",description:data.Riten})}}><img src="./images/speakers/ritenF.png"  /></button>
+               <div className={styles.galleryname}>Riten Debnath</div>
+               </div>
+               
+               <div className={styles.gallerypanel}>
+               <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Vijaya Aswani", about:"Illustrator, Creative Storyteller, Art Curator",image: "./images/speakers/vijayaF.png",description:data.Vijaya})}}><img src="./images/speakers/vijayaF.png" /></button>
+               <div className={styles.galleryname}>Vijaya Aswani</div>
+>>>>>>> 9c14e517fb0fe65674b620d55942f05cf3d91f67
                </div>
             </div>
 
 
               <div className={styles.gallery2}>
               <div className={styles.gallerypanel2}>
+<<<<<<< HEAD
                     <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Rituparna Neog", about:"Phd",image: "./images/Meghana.png",description:data.Rituparna})}}><img src="images/Meghana.png" /></button>
                     <div className={styles.galleryname}>Name</div>
                </div>
@@ -72,6 +99,25 @@ const Speakers2 = () => {
                <div className={styles.gallerypanel2}>
                     <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Mrinal Talukdar", about:"Phd",image: "./images/Meghana.png",description:data.Mrinal})}}><img src="images/Meghana.png" /></button>
                     <div className={styles.galleryname}>Name</div>
+=======
+                    <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Shankuraj Konwar", about:"Singer-Songwriter, Assamese music icon",image: "./images/speakers/shankurajF.png",description:data.Shankuraj})}}><img src="./images/speakers/shankurajF.png" /></button>
+                    <div className={styles.galleryname}>Shankuraj Konwar</div>
+               </div>
+
+               <div className={styles.gallerypanel2}>
+               <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Rajni Basumatary", about:"Filmmaker, Actor, Director, Cultural Change-Maker",image: "./images/speakers/rajniF.png",description:data.Rajni})}}><img src="./images/speakers/rajniF.png" /></button>
+               <div className={styles.galleryname}>Rajni Basumatary</div>
+               </div>
+
+               <div className={styles.gallerypanel2}>
+               <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Bipul Bhuyan", about:"Experimental Physicist, IIT Guwahati, Neutrino Researcher",image: "./images/speakers/bipulF.png",description:data.Bipul})}}><img src="./images/speakers/bipulF.png"/></button>
+               <div className={styles.galleryname}>Bipul Bhuyan</div>
+               </div>
+
+               <div className={styles.gallerypanel2}>
+               <button className={styles.button} onClick={() =>{togglemodal() ; setSpeaker({name:"Sneha Roy", about:"Poet, Researcher, Speaker, Gender and Literature Scholar",image: "./images/speakers/snehaF.png",description:data.Sneha})}}><img src="./images/speakers/snehaF.png" /></button>
+               <div className={styles.galleryname}>Sneha Roy</div>
+>>>>>>> 9c14e517fb0fe65674b620d55942f05cf3d91f67
                </div>
               </div>
           

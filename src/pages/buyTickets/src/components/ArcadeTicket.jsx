@@ -1,15 +1,12 @@
 import React from "react";
-import { Calendar, Clock, Ticket } from "lucide-react";
+import { Calendar, Clock } from "lucide-react";
 import "./ArcadeTicket.css";
 
-const ArcadeTicket = ({ type, date, time, onBook, className = "" }) => {
+const ArcadeTicket = ({ type, date, time, onBook, buttonText, buttonLink, className = "" }) => {
   const isStudent = type === "student";
 
   return (
-    <div class="tickets">
     <div className={`arcade-ticket-container ${className}`}>
-      
-
       {/* Main Ticket Container */}
       <div className="ticket-main">
         {/* Jagged Edges */}
@@ -19,7 +16,9 @@ const ArcadeTicket = ({ type, date, time, onBook, className = "" }) => {
         {/* Ticket Content */}
         <div className="ticket-content">
           <div className="header">
-            <div className="header-title"><img src="./images/WhiteTextLogo.png" alt="TEDx IIT Guwahati" className="image"/></div>
+            <div className="header-title">
+              <img src="./images/WhiteTextLogo.png" alt="TEDx IIT Guwahati" className="image" />
+            </div>
             <div className="header-subtitle">
               {isStudent ? "⭐ IITG STUDENT PASS ⭐" : "⭐ GENERAL ADMISSION ⭐"}
             </div>
@@ -28,36 +27,29 @@ const ArcadeTicket = ({ type, date, time, onBook, className = "" }) => {
           <div className="ticket-details">
             <div className="ticket-title">
               <h2>SEASIDE CITADEL</h2>
-              <p>
-                {isStudent
-                  ? "Special Student Access"
-                  : "General Public Access"}
-              </p>
+              <p>{isStudent ? "Special Student Access" : "General Public Access"}</p>
             </div>
             <div className="ticket-date-time">
               <div className="info">
                 <Calendar className="icon" />
-                {date}
+                <span>{date}</span>
               </div>
               <div className="info">
                 <Clock className="icon" />
-                {time}
+                <span>{time}</span>
               </div>
             </div>
           </div>
-    </div>      
+        </div>
 
-          <div className="footer">
-            <div className="ticket-number">
-              {/* <Ticket className="icon-large" /> */}
-              {/* <div className="number">
-                №{Math.floor(Math.random() * 9000 + 1000)}
-              </div> */}
-            </div>
-            <button className="book-button" onClick={onBook}>
-              SOON!
-            </button>
+        <div className="footer">
+          <div className="ticket-number">
+            {/* Optional Ticket Number */}
           </div>
+
+          <a href={buttonLink} className="book-button" onClick={onBook}>
+            {buttonText} {/* Dynamically set button text */}
+          </a>
         </div>
       </div>
     </div>
