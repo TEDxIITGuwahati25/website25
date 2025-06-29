@@ -19,13 +19,11 @@ import Preloader from './components/preloader/Preloader.js'
 import Footer from './components/footer/Footer.js';
 // import ScrollButton from './components/scroll/ScrollButton.js'
 import Navbar from './components/navbar/navbar.js'
-<<<<<<< HEAD
 import GoogleAnalytics from "./components/google analytics/Google.js";
 // import Speaker from './components/speakers/speaker.js'
 
-=======
 import Pages from './pages/404.js'
->>>>>>> 9c14e517fb0fe65674b620d55942f05cf3d91f67
+
 function App() {
   const [isLoaded,setIsLoaded] =useState(false);
 
