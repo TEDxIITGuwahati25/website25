@@ -2,11 +2,7 @@ import React, {useEffect, useState} from 'react';
 // import Navbar from "../../../components/navbar/Navbar";
 // import ScrollButton from '../../../components/scrollButton/scrollButton';
 import theme24 from "../../../assets/theme24.jpg";
-<<<<<<< HEAD
 import logo_24 from "../../../assets/2024_logo.png";
-=======
-import logo_23 from "../../../assets/2024_logo.png";
->>>>>>> 9c14e517fb0fe65674b620d55942f05cf3d91f67
 // import Footer from "../../../components/footer/Footer"
 import styles from "./Event_24.module.css";
 import Modal from "./Modal"

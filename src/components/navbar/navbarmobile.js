@@ -4,10 +4,7 @@ import { TbXboxX } from "react-icons/tb";
 import {NavLink} from "react-router-dom";
 import { useState,useEffect,useRef} from "react";
 import StarBorder from "./StarBorder";
-<<<<<<< HEAD
-=======
 
->>>>>>> 9c14e517fb0fe65674b620d55942f05cf3d91f67
 const Navbarmobile = () => {
    
   
@@ -54,14 +51,9 @@ className="custom-class"
 color="red"
 speed="1s"
 >
-<<<<<<< HEAD
 
 Book Now</StarBorder></NavLink></div>
                 
-=======
-Book Now</StarBorder></NavLink></div>
-
->>>>>>> 9c14e517fb0fe65674b620d55942f05cf3d91f67
             </div>}
         </div>
         

@@ -61,7 +61,6 @@ body.active-modal {
     padding-right: 20px;
 }
 .speakercontent h2{
-<<<<<<< HEAD
     font-size: 1.4em;
     max-width: 30%;
     /* text-align: center; */
@@ -70,17 +69,6 @@ body.active-modal {
 .speaker p{
     padding: 10px;
     font-size: 1.1em;
-=======
-    font-size: 1em;
-    /* max-width: 30%; */
-    /* text-align: center; */
-    /* transform: translateX(100px); */
-    padding: 2% 0 0 10%;
-}
-.speaker p{
-    padding: 10px;
-    font-size: 1em;
->>>>>>> 9c14e517fb0fe65674b620d55942f05cf3d91f67
     margin-top: 15px;
 }
 
@@ -96,11 +84,7 @@ body.active-modal {
         transform: translateX(9vw);
     }
     .speakercontent h2{
-<<<<<<< HEAD
         transform: translateX(28vw);
-=======
-        transform: translateX(10vw);
->>>>>>> 9c14e517fb0fe65674b620d55942f05cf3d91f67
         padding-top: 5px;
     }
     .speaker p{
@@ -117,17 +101,10 @@ body.active-modal {
         float: none;
     }
     .speakercontent img{
-<<<<<<< HEAD
         transform: translateX(2vw);
     }
     .speakercontent h2{
         transform: translateX(28vw);
-=======
-        transform: translateX(8vw);
-    }
-    .speakercontent h2{
-        transform: translateX(6vw);
->>>>>>> 9c14e517fb0fe65674b620d55942f05cf3d91f67
         padding-top: 5px;
     }
     .speaker p{
