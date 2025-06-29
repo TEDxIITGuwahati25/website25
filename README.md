@@ -31,6 +31,11 @@ A sleek, responsive, and fully dynamic website built for TEDxIITG 2025. Develope
 
 ---
 
+## 🤝 Team Credits
+WebOps Lead: Meghana Nelapati
+Frontend Contributions: Devansh Singh and others.
+
+
 ## 👥 Team Collaboration
 
 Worked closely with TEDxIITG 2025's webops and design teams to align UI with event vision. Followed an agile workflow, incorporated live feedback, and coordinated with core leads to ensure on-time deployment.
